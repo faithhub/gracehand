@@ -11,7 +11,7 @@
     <div class="side-menu-wrap">
       <ul class="side-menu-ul">
         <li class="{{ request()->is('admin')  ? 'page-active' : '' }}"><a href="{{ url('admin') }}"><i class="la la-dashboard icon-element"></i> Dashboard</a></li>
-        <li class="{{ request()->is('admin/users*')  ? 'page-active' : '' }}"><a href="{{ url('admin/users') }}"><i class="la la-user icon-element"></i> Users</a></li>
+        <li class="{{ request()->is('admin/partnership*')  ? 'page-active' : '' }}"><a href="{{ url('admin/partnership') }}"><i class="la la-user icon-element"></i> Partnerships</a></li>
         <li class="{{ request()->is('admin/courses*')  ? 'page-active' : '' }}">
           <a href="#"><i class="la la-bookmark icon-element"></i> Training <span class="la la-caret-down btn-toggle"></span></a>
           <ul class="dropdown-menu-item">
@@ -20,7 +20,7 @@
           </ul>
         </li>
         <li><a href="employer-transactions.html"><i class="la la-money-bill icon-element"></i>Payment History</a></li>
-        <li><a href="employer-job-alert.html"><i class="la la-book icon-element"></i>E-Book</a></li>
+        {{-- <li><a href="employer-job-alert.html"><i class="la la-book icon-element"></i>E-Book</a></li> --}}
         {{-- <li><div class="section-block margin-top-30px mb-3"></div></li> --}}
         <li class="{{ request()->is('profile*')  ? 'page-active' : '' }}"><a href="{{ url('admin/profile') }}"><i class="la la-user icon-element"></i> View Profile</a></li>
         <li class="{{ request()->is('change-password*')  ? 'page-active' : '' }}"><a href="{{ url('admin/change-password') }}"><i class="la la-lock icon-element"></i> Change Password</a></li>

@@ -87,7 +87,7 @@ class HomeController extends Controller
       return back()->withErrors($validator)->withInput();
     } else {
       $this->create_partner->create($data);
-      Session::flash('success', 'Your code is this');
+      Session::flash('success', 'Registeration successful, check your email for details');
       return back();
     }
   }

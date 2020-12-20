@@ -46,11 +46,11 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function 
   Route::match(['get', 'post'], '/profile', [\App\Http\Controllers\Admin\SettingController::class, 'index']);
   Route::get('change-password', [\App\Http\Controllers\Admin\SettingController::class, 'change_password']);
   Route::post('/change-password', [\App\Http\Controllers\Admin\ChangePasswordController::class, 'change']);
-  Route::get('/users', [\App\Http\Controllers\Admin\UserController::class, 'index']);
-  Route::get('/view-user/{id}', [\App\Http\Controllers\Admin\UserController::class, 'view_user']);
-  Route::get('/edit-user/{id}', [\App\Http\Controllers\Admin\UserController::class, 'edit_user']);
-  Route::post('/edit-user', [\App\Http\Controllers\Admin\UserController::class, 'edit']);
-  Route::post('/delete-user', [\App\Http\Controllers\Admin\UserController::class, 'delete_user']);
+  Route::get('/partnership', [\App\Http\Controllers\Admin\PartnershipController::class, 'index']);
+  Route::get('/view-partnership/{id}', [\App\Http\Controllers\Admin\PartnershipController::class, 'view_partnership']);
+  Route::get('/edit-partnership/{id}', [\App\Http\Controllers\Admin\PartnershipController::class, 'edit_partnership']);
+  // Route::post('/edit-user', [\App\Http\Controllers\Admin\UserController::class, 'edit']);
+  Route::post('/delete-partnership', [\App\Http\Controllers\Admin\PartnershipController::class, 'delete_partnership']);
   Route::get('courses', [\App\Http\Controllers\Admin\CourseController::class, 'index']);
   Route::match(['get', 'post'], 'add-course', [\App\Http\Controllers\Admin\CourseController::class, 'add']);
   Route::get('/ongoing-training', [\App\Http\Controllers\Admin\TrainingController::class, 'ongoing_training']);

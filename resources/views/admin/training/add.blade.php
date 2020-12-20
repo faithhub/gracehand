@@ -104,7 +104,7 @@
                       <label class="label-text">Description</label>
                       <div class="form-group">
                         <span class="la la-mail-bulk form-icon"></span>
-                        <textarea class="form-control @error('title') is-invalid @enderror" name="description"></textarea>
+                        <textarea class="form-control @error('title') is-invalid @enderror" name="description" id="editor"></textarea>
                         @error('description')
                         <span class="invalid-feedback mb-2" role="alert" style="display: block">
                           <strong>{{ $message }}</strong>
@@ -131,6 +131,15 @@
   </div>
 </form>
 
+
+{{-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+<script>
+  tinymce.init({
+    selector: 'textarea#editor',
+    menubar: false
+  });
+</script> --}}
 <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
 <script>
