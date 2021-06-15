@@ -12,11 +12,19 @@
       <ul class="side-menu-ul">
         <li class="{{ request()->is('admin')  ? 'page-active' : '' }}"><a href="{{ url('admin') }}"><i class="la la-dashboard icon-element"></i> Dashboard</a></li>
         <li class="{{ request()->is('admin/partnership*')  ? 'page-active' : '' }}"><a href="{{ url('admin/partnership') }}"><i class="la la-user icon-element"></i> Partnerships</a></li>
-        <li class="{{ request()->is('admin/courses*')  ? 'page-active' : '' }}">
+        <li class="{{ request()->is('admin/full-training*')  ? 'page-active' : ''}}{{ request()->is('admin/short-training*')  ? 'page-active' : '' }}{{ request()->is('admin/view-training*')  ? 'page-active' : '' }}">
           <a href="#"><i class="la la-bookmark icon-element"></i> Training <span class="la la-caret-down btn-toggle"></span></a>
           <ul class="dropdown-menu-item">
-            <li><a href="{{ url('admin/ongoing-training') }}">Ongoing Training</a></li>
+            <li><a href="{{ url('admin/short-training') }}">Short Training</a></li>
             <li><a href="{{ url('admin/full-training') }}">Full Package Training</a></li>
+          </ul>
+        </li>
+        <li class="{{ request()->is('admin/about-us*')  ? 'page-active' : '' }}{{ request()->is('admin/contact-us*')  ? 'page-active' : '' }}"{{ request()->is('admin/slider*')  ? 'page-active' : '' }}>
+          <a href="#"><i class="la la-bookmark icon-element"></i> Website Settings <span class="la la-caret-down btn-toggle"></span></a>
+          <ul class="dropdown-menu-item">
+            <li><a href="{{ url('admin/about-us') }}">About Us</a></li>
+            <li><a href="{{ url('admin/contact-us') }}">Contact Us</a></li>
+            <li><a href="{{ url('admin/slider') }}">Sliders & Banners</a></li>
           </ul>
         </li>
         <li><a href="employer-transactions.html"><i class="la la-money-bill icon-element"></i>Payment History</a></li>

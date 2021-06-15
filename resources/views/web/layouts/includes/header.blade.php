@@ -1,78 +1,57 @@
-<header class="header d-flex flex-row">
-  <div class="header_content d-flex flex-row align-items-center">
-    <!-- Logo -->
-    <div class="logo_container">
-      <div class="logo">
-        <img src="{{ asset('web/logo/trans_logo_2.png') }}" alt="" style="width: 80px; height: auto;">
-        <span style="color: #006600" class="">GraceHand</span>
-        {{-- #ffb606 --}}
+<header id="header" id="home">
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
+          <a href="tel:+953 012 3654 896"><span class="lnr lnr-phone-handset"></span> <span class="text">+953 012 3654
+              896</span></a>
+          <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection#07747277776875734764686b68756b6e652964686a"><span class="lnr lnr-envelope"></span> <span class="text"><span class="__cf_email__" data-cfemail="f98a8c8989968b8db99a9695968b95909bd79a9694">[email&#160;protected]</span></span></a>
+        </div>
       </div>
     </div>
-
-    <!-- Main Navigation -->
-    <nav class="main_nav_container">
-      <div class="main_nav">
-        <ul class="main_nav_list">
-          <li class="main_nav_item {{ request()->is('home*')  ? 'active' : '' }}"><a href="{{ url('home') }}">home</a></li>
-          {{-- <li class="main_nav_item {{ request()->is('contact*')  ? 'active' : '' }}"><a href="{{ url('contact') }}">E-Book</a></li> --}}
-          <li class="main_nav_item {{ request()->is('about*')  ? 'active' : '' }}"><a href="{{ url('about') }}">about us</a></li>
-          <li class="main_nav_item {{ request()->is('courses*')  ? 'active' : '' }}"><a href="{{ url('courses') }}">Trainings</a></li>
-          <li class="main_nav_item {{ request()->is('partnership*')  ? 'active' : '' }}"><a href="{{ url('partnership') }}">Partnership</a></li>
-          <!-- <li class="main_nav_item {{ request()->is('courses*')  ? 'active' : '' }}"><a href="{{ url('courses') }}">Trainings</a></li> -->
-          <li class="main_nav_item {{ request()->is('contact*')  ? 'active' : '' }}"><a href="{{ url('contact') }}">Conference</a></li>
-          {{-- <li class="main_nav_item {{ request()->is('login*')  ? 'active' : '' }}"><a href="{{ url('login') }}">Sign In</a></li>
-          <li class="main_nav_item {{ request()->is('register*')  ? 'active' : '' }}"><a href="{{ url('register') }}">Sign Up</a></li> --}}
-        </ul>
+  </div>
+  <div class="container main-menu">
+    <div class="row align-items-center justify-content-between d-flex">
+      <div id="logo">
+        <a href="index-2.html"><img src="{{ asset('front/img/xlogo.png.pagespeed.ic.IkdGzsW_qc.png') }}" alt="" title="" /></a>
       </div>
-    </nav>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index-2.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li class="menu-has-children"><a href="#">Blog</a>
+            <ul>
+              <li><a href="blog-home.html">Blog Home</a></li>
+              <li><a href="blog-single.html">Blog Single</a></li>
+            </ul>
+          </li>
+          <li class="menu-has-children"><a href="#">Pages</a>
+            <ul>
+              <li><a href="course-details.html">Course Details</a></li>
+              <li><a href="event-details.html">Event Details</a></li>
+              <li><a href="elements.html">Elements</a></li>
+              <li class="menu-has-children"><a href="#">Level 2 </a>
+                <ul>
+                  <li><a href="#">Item One</a></li>
+                  <li><a href="#">Item Two</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
-  <div class="header_side d-flex flex-row justify-content-center align-items-center">
-    <img src="{{ asset('web/images/phone-call.svg')}}" alt="">
-    <span>+43 4566 7788 2457</span>
-  </div>
-
-  <!-- Hamburger -->
-  <div class="hamburger_container">
-    <i class="fas fa-bars trans_200"></i>
-  </div>
-
 </header>
-
-<!-- Menu -->
-<div class="menu_container menu_mm">
-
-  <!-- Menu Close Button -->
-  <div class="menu_close_container">
-    <div class="menu_close"></div>
-  </div>
-
-  <!-- Menu Items -->
-  <div class="menu_inner menu_mm">
-    <div class="menu menu_mm">
-      <ul class="menu_list menu_mm">
-        <li class="menu_item menu_mm"><a href="{{ url('home') }}">Home</a></li>
-        <li class="menu_item menu_mm"><a href="{{ url('about') }}">About us</a></li>
-        <li class="menu_item menu_mm"><a href="{{ url('courses') }}">Courses</a></li>
-        <li class="menu_item menu_mm"><a href="{{ url('contact') }}">Contact</a></li>
-        <li class="menu_item menu_mm"><a href="{{ url('login') }}">Sign In</a></li>
-        <li class="menu_item menu_mm"><a href="{{ url('register') }}">Sign up</a></li>
-      </ul>
-
-      <!-- Menu Social -->
-
-      <div class="menu_social_container menu_mm">
-        <ul class="menu_social menu_mm">
-          <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-          <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-          <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-twitter"></i></a></li>
-        </ul>
-      </div>
-
-      <div class="menu_copyright menu_mm">Colorlib All rights reserved</div>
-    </div>
-
-  </div>
-
-</div>

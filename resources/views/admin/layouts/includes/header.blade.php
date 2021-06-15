@@ -55,13 +55,13 @@
                                                                 </a>
                                                             </li>
                                                             <li class="mb-0">
-                                                                <a href="{{ url('profile') }}" class="d-block">
-                                                                    <i class="la la-bookmark"></i> My Course
+                                                                <a href="{{ url('admin/full-training') }}" class="d-block">
+                                                                    <i class="la la-bookmark"></i> Full Package Training
                                                                 </a>
                                                             </li>
                                                             <li class="mb-0">
-                                                                <a href="{{ url('profile') }}" class="d-block">
-                                                                    <i class="la la-book"></i> E-Bokks
+                                                                <a href="{{ url('admin/ongoing-training') }}" class="d-block">
+                                                                    <i class="la la-book"></i> Short Training
                                                                 </a>
                                                             </li>
                                                             <li class="mb-0">

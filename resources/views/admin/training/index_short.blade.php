@@ -24,7 +24,7 @@
         <h3 class="widget-title pb-0">All {{$page_title}}(s)</h3>
         <div class="title-shape margin-top-10px"></div>
         <div class="text-right">
-          <a href="{{ url('admin/add-training') }}" class="btn btn-success">Create New Training</a>
+          <a href="{{ url('admin/add-short-training') }}" class="btn btn-success">Create New Training</a>
         </div>
       </div><!-- billing-title-wrap -->
       <div class="billing-content pb-0">
@@ -35,10 +35,10 @@
               <tr>
                 <th>S/N</th>
                 <th>Title</th>
-                <th>Training Type</th>
                 <th>Amount</th>
+                <th>Applied Users</th>
+                <th>Status</th>
                 <th>Date Created</th>
-                <th>Published</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -49,53 +49,61 @@
                 <td>
                   <div class="bread-details d-flex">
                     <div class="manage-candidate-content">
-                      <h4 class="widget-title pb-2"><a href="#" class="color-text-2">{{$training->title}}</a></h4>
+                      <h4 class="widget-title pb-2"><a href="{{ url('admin/view-training', $training->id) }}" class="color-text-2">{{$training->title}}</a></h4>
                     </div><!-- end manage-candidate-content -->
                   </div>
                 </td>
                 <td>
                   <div class="bread-details d-flex">
                     <div class="manage-candidate-content">
-                      <h3 class="widget-title pb-2"><a href="#" class="color-text-2">{{$training->trainingType}}</a></h3>
+                      <h3 class="widget-title pb-2 text-success"><a class="text-success">₦{{$training->amount}}</a></h3>
                     </div><!-- end manage-candidate-content -->
                   </div>
+                </td>
+                <td>{{$training->applied_users}} User (s)
+                  {{-- <div class="bread-details d-flex">
+                    <div class="manage-candidate-content">
+                      <h4 class="widget-title pb-2"><a class="color-text-2"></a></h4>
+                    </div><!-- end manage-candidate-content -->
+                  </div> --}}
                 </td>
                 <td>
                   <div class="bread-details d-flex">
                     <div class="manage-candidate-content">
-                      <h3 class="widget-title pb-2"><a href="#" class="color-text-2">{{$training->amount}}</a></h3>
+                      <h3 class="widget-title pb-2 text-success">
+                        <a class="text-success">
+                          @if ($training->published == 'yes')
+                          <span class="btn btn-sm btn-success"><b>Published</b></span>
+                          @else
+                          <span class="btn btn-sm btn-warning"><b>Unpublished</b></span>                              
+                          @endif
+                        </a>
+                      </h3>
                     </div><!-- end manage-candidate-content -->
                   </div>
                 </td>
                 <td>{{ date('D, M j, Y \a\t g:ia', strtotime($training->created_at))}}</td>
-                <td>{{$training->published}}</td>
-                <td class="text-center">
+                <td class="text-center">                  
                   <div class="manage-candidate-wrap">
                     <div class="bread-action pt-0">
-                      <ul class="info-list">
-                        <li class="d-inline-block"><a href="{{ url('admin/add-chapters', $training->id) }}"><i class="la la-plus" title="Add Chapters"></i></a></li>
-                        <li class="d-inline-block">
-                          <form method="POST" action="{{url('admin/publish')}}">
-                            @csrf
-                            <input name="trainingId" value="{{$training->id}}" hidden>
-                            <button type="submit" style="border:none;" {{$training->published == 'yes' ? __('disabled') : null}}>
-                              <i class="la la-eye" title="Publish Training"></i>
-                            </button>
-                          </form>
-                        </li>
-                        <!-- <li class="d-inline-block"><a href="{{ url('admin/view-user') }}"><i class="la la-eye" data-toggle="tooltip" data-placement="top" title="View"></i></a></li>
-                        <li class="d-inline-block"><a href="{{ url('admin/edit-user') }}"><i class="la la-edit" data-toggle="tooltip" data-placement="top" title="Edit"></i></a></li>
-                        <li class="d-inline-block"><a href="#"><i data-toggle="modal" data-target="#delete{{$training->id}}" class="la la-trash" data-toggle="tooltip" data-placement="top" title="Remove"></i></a></li> -->
-                      </ul>
+                        <ul class="info-list">                          
+                          @if ($training->published == 'yes')
+                          <li class="d-inline-block"><a href="{{ url('admin/short-unpublish', $training->id) }}"><i class="la la-lock" title="Unpublished"></i></a></li>
+                          @else
+                          <li class="d-inline-block"><a href="{{ url('admin/short-publish', $training->id) }}"><i class="la la-unlock" title="Publish"></i></a></li>                      
+                          @endif
+                            <li class="d-inline-block"><a href="{{ url('admin/view-training', $training->id) }}"><i class="la la-eye" title="View"></i></a></li>
+                            <li class="d-inline-block"><a href="{{ url('admin/edit-training', $training->id) }}"><i class="la la-edit" title="Edit"></i></a></li>
+                            <li class="d-inline-block"><a href="#"><i data-toggle="modal" data-target="#delete{{$training->id}}" class="la la-trash" data-toggle="tooltip" data-placement="top" title="Remove"></i></a></li>
+                        </ul>
                     </div>
-                  </div>
-                  <!-- Modal Delete -->
+                </div>
                   <div class="modal fade" id="delete{{$training->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-body mt-2 mb-2 text-center">
-                          <h2>Are you sure you want to delete?</h2>
-                          <form method="POST" action="{{ url('user/delete-user') }}">
+                          <h4>Are you sure you want to delete?</h4>
+                          <form method="POST" action="{{ url('admin/short-delete') }}">
                             @csrf
                             <input type="hidden" name="id" value="{{ $training->id }}">
                             <button type="submit" class="btn btn-success m-2">Yes</button>
@@ -121,5 +129,4 @@
   </div><!-- end billing-form-item -->
 </div><!-- end col-lg-12 -->
 </div><!-- end row -->
-
 @endsection

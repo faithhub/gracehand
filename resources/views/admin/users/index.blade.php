@@ -43,12 +43,12 @@
                                         <td width="40%">                                        
                                             <div class="bread-details d-flex">
                                                 <div class="bread-img flex-shrink-0">
-                                                    <a href="#" class="d-block">
+                                                    <a href="{{ url('admin/view-user', $user->id) }}" class="d-block">
                                                         <img src="{{ asset('images/avatar.jpg') ??  asset('uploads/profile_pictures/'.Auth::user()->avatar)}}" alt="{{$user->first_name  }}">
                                                     </a>
                                                 </div>
                                                 <div class="manage-candidate-content">
-                                                    <h2 class="widget-title pb-2"><a href="#" class="color-text-2">{{$user->name}}</a></h2>
+                                                    <h2 class="widget-title pb-2"><a href="{{ url('admin/view-user', $user->id) }}" class="color-text-2">{{$user->name}}</a></h2>
                                                     <p class="font-size-15">
                                                         <span class="mr-2"><i class="la la-envelope-o mr-1"></i><a href="mailto:{{$user->email}}" class="color-text-3">{{$user->email}}</a></span><br>
                                                         <span class="mr-2"><i class="la la-phone mr-1"></i>{{$user->mobile ?? 'Not Uploaded Yet'}}</span>

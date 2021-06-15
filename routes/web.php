@@ -53,11 +53,24 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function 
   Route::post('/delete-partnership', [\App\Http\Controllers\Admin\PartnershipController::class, 'delete_partnership']);
   Route::get('courses', [\App\Http\Controllers\Admin\CourseController::class, 'index']);
   Route::match(['get', 'post'], 'add-course', [\App\Http\Controllers\Admin\CourseController::class, 'add']);
-  Route::get('/ongoing-training', [\App\Http\Controllers\Admin\TrainingController::class, 'ongoing_training']);
+
+  //Short Training
+  Route::get('/short-training', [\App\Http\Controllers\Admin\TrainingController::class, 'short_training']);
+  Route::match(['get', 'post'], 'add-short-training', [\App\Http\Controllers\Admin\TrainingController::class, 'add_short_training']);
+  Route::get('/short-publish/{id}', [\App\Http\Controllers\Admin\TrainingController::class, 'short_publish']);
+  Route::get('/short-unpublish/{id}', [\App\Http\Controllers\Admin\TrainingController::class, 'short_unpublish']);
+  Route::post('/short-delete', [\App\Http\Controllers\Admin\TrainingController::class, 'short_delete']);
+
   Route::get('/full-training', [\App\Http\Controllers\Admin\TrainingController::class, 'full_training']);
+  Route::match(['get', 'post'], 'add-full-training', [\App\Http\Controllers\Admin\TrainingController::class, 'add_full_training']);
+
+  Route::get('/view-training/{id}', [\App\Http\Controllers\Admin\TrainingController::class, 'view_short_training']);
   Route::get('/add-training', [\App\Http\Controllers\Admin\TrainingController::class, 'add_training']);
   Route::post('/add-training', [\App\Http\Controllers\Admin\TrainingController::class, 'addNewTraining']);
   Route::get('/add-chapters/{trainingId}', [\App\Http\Controllers\Admin\TrainingController::class, 'addChapters']);
   Route::post('/add-chapter', [\App\Http\Controllers\Admin\TrainingController::class, 'addChapter']);
   Route::post('/publish', [\App\Http\Controllers\Admin\TrainingController::class, 'publish']);
+  Route::match(['get', 'post'], '/about-us', [\App\Http\Controllers\Admin\SettingController::class, 'about_us']);
+  Route::match(['get', 'post'], '/contact-us', [\App\Http\Controllers\Admin\SettingController::class, 'contact_us']);
+  Route::match(['get', 'post'], '/slider', [\App\Http\Controllers\Admin\SettingController::class, 'slider']);
 });

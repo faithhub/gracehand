@@ -5,18 +5,18 @@
   <div class="col-lg-12">
     <div class="breadcrumb-content d-flex flex-wrap justify-content-between align-items-center">
       <div class="section-heading">
-        <h2 class="sec__title line-height-45">Add New Training</h2>
+        <h2 class="sec__title line-height-45">Add New Short Training</h2>
       </div><!-- end section-heading -->
       <ul class="list-items d-flex align-items-center">
         <li class="active__list-item"><a href="index.html">Home</a></li>
         <li class="active__list-item">Dashboard</li>
-        <li>Add New Training</li>
+        <li>Add New Short Training</li>
       </ul>
     </div><!-- end breadcrumb-content -->
   </div><!-- end col-lg-12 -->
 </div><!-- end row -->
 
-<form method="POST" action="{{ url('admin/add-training') }}" enctype="multipart/form-data">
+<form method="POST" action="{{ url('admin/add-short-training') }}" enctype="multipart/form-data">
   @csrf
   <div class="row mt-5">
     <div class="col-lg-12">
@@ -49,10 +49,10 @@
                       </div>
                     </div><!-- end user-profile-action -->
                   </div><!-- end user-profile-action-wrap -->
-                  <div class="col-lg-4">
+                  <div class="col-lg-6">
                     <div class="input-box">
                       <h3 class="widget-title">Training Title</h3>
-                      <label class="label-text">Training Title</label>
+                      {{-- <label class="label-text">Training Title</label> --}}
                       <div class="form-group">
                         <span class="la la-mail-bulk form-icon"></span>
                         <input class="form-control @error('title') is-invalid @enderror" type="text" name="title">
@@ -64,7 +64,7 @@
                       </div>
                     </div><!-- end input-box -->
                   </div><!-- end col-lg-6 -->
-                  <div class="col-lg-4">
+                  {{-- <div class="col-lg-4">
                     <div class="input-box">
                       <h3 class="widget-title">Training Type</h3>
                       <label class="label-text">Training Type</label>
@@ -74,19 +74,18 @@
                           <option value="short">Short Training</option>
                           <option value="full">Full Training</option>
                         </select>
-                        <!-- <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="5" style="width: 182px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-ftfq-container"><span class="select2-selection__rendered" id="select2-ftfq-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select category</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span> -->
-                      </div><!-- end sidebar-option -->
+                      </div>
                       @error('trainingType')
                       <span class="invalid-feedback" role="alert" style="display: block">
                         <strong>{{ $message }}</strong>
                       </span>
                       @enderror
-                    </div><!-- end input-box -->
-                  </div><!-- end col-lg-6 -->
-                  <div class="col-lg-4">
+                    </div>
+                  </div> --}}
+                  <div class="col-lg-6">
                     <div class="input-box">
                       <h3 class="widget-title">Amount Offered For Training</h3>
-                      <label class="label-text">Amount Offered For Training</label>
+                      {{-- <label class="label-text">Amount Offered For Training</label> --}}
                       <div class="form-group">
                         <span class="form-icon">₦</span>
                         <input class="form-control @error('amount') is-invalid @enderror" type="number" name="amount">
@@ -97,7 +96,7 @@
                         @enderror
                       </div>
                     </div><!-- end input-box -->
-                  </div><!-- end col-lg-6 -->
+                  </div>
                   <div class="col-lg-12">
                     <div class="input-box">
                       <h3 class="widget-title">Description</h3>

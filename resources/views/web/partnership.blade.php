@@ -52,7 +52,7 @@
                 <label for="mobile" class="col-form-label text-md-right">{{ __('Mobile Number') }}</label>
 
                 <div class="">
-                  <input id="mobile" type="text" class="form-control @error('mobile') is-invalid @enderror" name="mobile">
+                  <input id="mobile" type="number" class="form-control @error('mobile') is-invalid @enderror" name="mobile">
 
                   @error('mobile')
                   <span class="invalid-feedback" role="alert">
@@ -78,7 +78,7 @@
               <div class="form-group col mb-0">
                 <div class="offset-md-3">
                   <button type="submit" class="btn" style="background-color: #006600; color: white; cursor: pointer;">
-                    {{ __('Create Partnership Code') }}
+                    {{ __('Join Partnership') }}
                   </button>
                 </div>
               </div>

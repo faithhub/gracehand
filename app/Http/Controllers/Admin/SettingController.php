@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -19,7 +20,7 @@ class SettingController extends Controller
 
     public function index(Request $request)
     {
-       if ($_POST) {
+        if ($_POST) {
             $rules = array(
                 'name' => ['required', 'max:255'],
                 'mobile' => ['max:255'],
@@ -42,7 +43,7 @@ class SettingController extends Controller
                 //dd($request->all());
                 if ($request->file('avatar')) {
                     $file = $request->file('avatar');
-                    $picture = 'PP'.'CG' . date('dMY') . time() . '.' . $file->getClientOriginalExtension();
+                    $picture = 'PP' . 'CG' . date('dMY') . time() . '.' . $file->getClientOriginalExtension();
                     $pictureDestination = 'uploads/profile_pictures';
                     $file->move($pictureDestination, $picture);
                 }
@@ -58,11 +59,42 @@ class SettingController extends Controller
         } else {
             $data['title'] = 'My Profile';
             return view('admin.settings.index', $data);
-        }       
+        }
     }
     public function change_password()
     {
         $data['title'] = 'Change Password';
         return view('admin.settings.password', $data);
+    }
+    public function about_us(Request $request)
+    {
+        if ($_POST) {
+            # code...
+        } else {
+            $data['title'] = 'About Us';
+            return view('admin.web_settings.about', $data);
+        }
+    }
+
+    public function contact_us(Request $request)
+    {
+        if ($_POST) {
+            # code...
+        } else {
+            $data['title'] = 'Contact Us';
+            return view('admin.web_settings.contact', $data);
+        }
+    }
+
+    public function slider(Request $request)
+    {
+        if ($_POST) {
+            # code...
+        } else {
+            $data['title'] = 'Home Page Slider';
+            $data['sn'] = 1;
+            $data['sliders'] = Slider::all();
+            return view('admin.web_settings.slider', $data);
+        }
     }
 }
