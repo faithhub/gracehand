@@ -1,91 +1,122 @@
 @extends('web.layouts.app')
 @section('content')
-{{-- <link rel="stylesheet" type="text/css" href="{{ asset('web/styles/courses_responsive.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('web/styles/courses_styles.css') }}"> --}}
 
-{{-- <div class="home">
-    <div class="home_background_container prlx_parent">
-        <div class="home_background prlx" style="background-image:url({{ asset('web/images/courses_background.jpg') }})"></div>
-    </div>
-    <div class="home_content">
-        <h1>About</h1>
-    </div>
-</div> --}}
 
-<!-- Popular -->
-
-<div class="popular page_section" style="margin-top: 4rem">
+<section class="page-header">
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="section_title text-center">
-                    <h1>Contact US</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="row course_boxes">
-            <!-- Popular Course Item -->
-            <div class="col-lg-8">
-                <div class="card p-3">
-                    <form>
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input type="" class="form-control" placeholder="Full Name">
-                        </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="" class="form-control" placeholder="Email Address">
-                        </div>
-                        <div class="form-group">
-                            <label>Message</label>
-                            <textarea class="form-control" rows="4" placeholder="Your Message here!"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-block" style="background-color: #006600; color:white">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Popular Course Item -->
-            <div class="col-lg-4">
-                <div class="">
-                    <h3>Join Courses</h3>
-                    <p>
-                        In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, 
-                        vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, 
-                        finibus tortor fermentum. Etiam eu purus nec eros varius luctus. 
-                        Praesent finibus risus facilisis ultricies. Etiam eu purus nec eros varius luctus.
-                    </p>
-                    <ul>
-                        <li class="contact_info_item m-3" style="display: inline-flex">
-                            <span class="fa fa-address-book m-1"></span>
-                            {{-- <div class="contact_info_icon">
-                                <img src="{{ asset('web/im  ages/placeholder.svg') }}" alt="https://www.flaticon.com/authors/lucy-g" style="width: 20px; height: auto; color:#006600 !important">
-                            </div> --}}
-                            Blvd Libertad, 34 m05200 Arévalo
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-8">
+                <div class="title-block">
+                    <h1>Contact Us</h1>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="#">Home</a>
                         </li>
-                        <li class="contact_info_item m-3" style="display: inline-flex">
-                            <span class="fa fa-phone m-1"></span>
-                            {{-- <div class="contact_info_icon">
-                                <img src="{{ asset('web/images/smartphone.svg') }}" alt="https://www.flaticon.com/authors/lucy-g" style="width: 20px; height: auto;">
-                            </div> --}}
-                            +234 081 6818 1969
-                        </li>
-                        <li class="contact_info_item m-3" style="display: inline-flex">
-                            <span class="fa fa-envelope m-1"></span>
-                            {{-- <div class="contact_info_icon">
-                                <img src="{{ asset('web/images/envelope.svg') }}" alt="https://www.flaticon.com/authors/lucy-g" style="width: 20px; height: auto;">
-                            </div> --}}
-                            davidshine4jesus@gmail.com
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                            Contact
                         </li>
                     </ul>
-
                 </div>
             </div>
-
         </div>
-    </div>		
-</div>
+    </div>
+</section>
+
+<!-- Map section start -->
+<section class="map">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Map section End -->
+
+<!-- Contact section start -->
+<section class="contact section-padding">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-7 col-xl-7">
+                <div class="section-heading center-heading">
+                    <span class="subheading">contact</span>
+                    <h3>For more information about our courses, get in touch</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-12 col-md-6">
+                        <div class="contact-item">
+                            <p>Email Us</p>
+                            <h4><a href="http://themeturn.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9feceaefeff0edebdffaf2fef6f3b1fcf0f2">[email&#160;protected]</a></h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6">
+                        <div class="contact-item">
+                            <p>Make a Call</p>
+                            <h4>+45 234 345467</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6">
+                        <div class="contact-item">
+                            <p>Corporate Office</p>
+                            <h4>Moon Street Light Avenue, 14/05
+                                Jupiter, JP 80630 </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <form class="contact__form form-row " method="post" action="http://themeturn.com/tf-db/eduhash/theme/mail.php" id="contactForm">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                Your message was sent successfully.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Your Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="text" name="email" id="email" class="form-control" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <textarea id="message" name="message" cols="30" rows="6" class="form-control" placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="mt-4 ">
+                            <button class="btn btn-main" type="submit">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact section End -->
+
 @endsection

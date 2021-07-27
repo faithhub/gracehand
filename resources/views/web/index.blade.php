@@ -1,703 +1,489 @@
 @extends('web.layouts.app')
 @section('content')
-<section class="banner-area relative" id="home">
-    <div class="overlay overlay-bg"></div>
+<!-- Banner Section Start -->
+<section class="banner">
     <div class="container">
-        <div class="row fullscreen d-flex align-items-center justify-content-between">
-            <div class="banner-content col-lg-9 col-md-12">
-                <h1 class="text-uppercase">
-                    We Ensure better education
-                    for a better world
-                </h1>
-                <p class="pt-10 pb-10">
-                    In the history of modern astronomy, there is probably no one greater leap forward than the building and
-                    launch of the space telescope known as the Hubble.
-                </p>
-                <a href="#" class="primary-btn text-uppercase">Get Started</a>
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-xl-7">
+                <div class="banner-content text-center">
+                    <span class="subheading">Welcome to</span>
+                    <h1><span class="font-weight-normal">GraceHand</span> Research Institute</h1>
+                    <!-- <p>Eduhash is a HTML5 template based on Sass and Bootstrap 4 with modern and creative multipurpose design you can use it as a startups.</p> -->
+                    <a href="#" class="btn btn-main mr-2">our Trainings </a>
+                    <a href="#" class="btn btn-tp">Partner </a>
+                </div>
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</section>
+<!-- Banner Section end -->
+
+<!-- Feature section start -->
+<section class="feature section-padding pb-0">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-7">
+                <div class="section-heading center-heading">
+                    <span class="subheading">Maximize your potentials</span>
+                    <h3>Learn the secrets to Life Success</h3>
+                    <p>The ultimate planning solution for
+                        busy women who want to reach their personal goals</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-lg-3 col-md-6 col-xl-3">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="flaticon-flag"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Expert Teacher</h4>
+                        <p>Develop skills for career of various majors including computer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xl-3">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="flaticon-layers"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Self Development</h4>
+                        <p>Develop skills for career of various majors including computer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xl-3">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="flaticon-video-camera"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Remote Learning</h4>
+                        <p>Develop skills for career of various majors including language</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xl-3">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="flaticon-help"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Life Time Support</h4>
+                        <p>Develop skills for career of various majors including language </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
+<!-- Feature section End -->
+<!-- About Section Start -->
+<section class="about-section section-padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6">
+                <div class="video-block">
+                    <img src="assets/images/bg/about.jpg" alt="" class="img-fluid">
+                    <a href="#" class="video-icon"><i class="fa fa-play"></i></a>
+                </div>
+            </div>
 
+            <div class="col-xl-6 pl-5 col-lg-6">
+                <div class="section-heading mt-4 mt-lg-0 ">
+                    <span class="subheading">Self Development Course</span>
+                    <h3>Get Instant Access To <span> Expert solution</span></h3>
+                    <p>The ultimate planning solution for busy women who want to reach their personal goals.Effortless comfortable eye-catching unique detail </p>
 
-<section class="feature-area">
+                </div>
+                <ul class="about-features">
+                    <li>
+                        <i class="fa fa-check"></i>
+                        <h5>High Quality Video Details</h5>
+                    </li>
+                    <li>
+                        <i class="fa fa-check"></i>
+                        <h5>Powerful Audiance</h5>
+                    </li>
+                    <li>
+                        <i class="fa fa-check"></i>
+                        <h5>Premium Content Worldwide</h5>
+                    </li>
+                </ul>
+
+                <a href="#" class="btn btn-main">Our Courses</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section END -->
+<section class="section-padding popular-course bg-grey">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-7">
+                <div class="section-heading center-heading">
+                    <span class="subheading">Trending Courses</span>
+                    <h3>Popular Online Courses Around You</h3>
+                    <p>The ultimate planning solution for
+                        busy women who want to reach their personal goals</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="course-block">
+                    <div class="course-img">
+                        <img src="assets/images/course/course-1.jpg" alt="" class="img-fluid">
+                        <div class="course-price ">$120 </div>
+                    </div>
+
+                    <div class="course-content">
+                        <span class="course-cat">Graphic design</span>
+                        <h4><a href="#">Information About UI/UX Design Degree</a></h4>
+                        <div class="course-meta">
+                            <span class="course-student"><i class="fa fa-user-alt"></i>340 Students</span>
+                            <span class="course-duration"><i class="far fa-file-alt"></i>82 Lessons</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="course-block">
+                    <div class="course-img">
+                        <img src="assets/images/course/course-3.jpg" alt="" class="img-fluid">
+                        <div class="course-price ">$100 </div>
+                    </div>
+
+                    <div class="course-content">
+                        <span class="course-cat">Web design</span>
+                        <h4><a href="#">React – The Complete Guide (React Router)</a></h4>
+                        <div class="course-meta">
+                            <span class="course-student"><i class="fa fa-user-alt"></i>340 Students</span>
+                            <span class="course-duration"><i class="far fa-file-alt"></i>82 Lessons</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="course-block">
+                    <div class="course-img">
+                        <img src="assets/images/course/course-2.jpg" alt="" class="img-fluid">
+                        <div class="course-price ">$100 </div>
+                    </div>
+
+                    <div class="course-content">
+                        <span class="course-cat">photography</span>
+                        <h4><a href="#">Photography Crash Course for Photographer</a></h4>
+
+                        <div class="course-meta">
+                            <span class="course-student"><i class="fa fa-user-alt"></i>340 Students</span>
+                            <span class="course-duration"><i class="far fa-file-alt"></i>82 Lessons</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="text-center mt-5">
+                    Take the control of their life back and start doing things to make their dream come true. <a href="course.html" class="font-weight-bold text-underline">View all courses </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- COunter Section start -->
+<section class="counter-section section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                <div class="single-feature">
-                    <div class="title">
-                        <h4>Learn Online Courses</h4>
-                    </div>
-                    <div class="desc-wrap">
-                        <p>
-                            Usage of the Internet is becoming more common due to rapid advancement
-                            of technology.
-                        </p>
-                        <a href="#">Join Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="single-feature">
-                    <div class="title">
-                        <h4>No.1 of universities</h4>
-                    </div>
-                    <div class="desc-wrap">
-                        <p>
-                            For many of us, our very first experience of learning about the celestial bodies begins when we saw our
-                            first.
-                        </p>
-                        <a href="#">Join Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="single-feature">
-                    <div class="title">
-                        <h4>Huge Library</h4>
-                    </div>
-                    <div class="desc-wrap">
-                        <p>
-                            If you are a serious astronomy fanatic like a lot of us are, you can probably remember that one event.
-                        </p>
-                        <a href="#">Join Now</a>
-                    </div>
+            <div class="col-xl-10">
+                <div class="section-heading">
+                    <span class="subheading">Maximize your potentials</span>
+                    <h3>We break down barriers so teams can focus on what matters – learning together to create
+                        online career you love.</h3>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-
-<section class="popular-course-area section-gap">
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="menu-content pb-70 col-lg-8">
-                <div class="title text-center">
-                    <h1 class="mb-10">Popular Courses we offer</h1>
-                    <p>There is a moment in the life of any aspiring.</p>
-                </div>
-            </div>
-        </div>
         <div class="row">
-            <div class="active-popular-carusel">
-                <div class="single-popular-carusel">
-                    <div class="thumb-wrap relative">
-                        <div class="thumb relative">
-                            <div class="overlay overlay-bg"></div>
-                            <img class="img-fluid" src="img/xp1.jpg.pagespeed.ic.-MfiiYTTYg.jpg" alt="">
-                        </div>
-                        <div class="meta d-flex justify-content-between">
-                            <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                            <h4>$150</h4>
-                        </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="counter-item">
+                    <h6>Instructors</h6>
+                    <div class="count">
+                        <span class="counter">90</span>
                     </div>
-                    <div class="details">
-                        <a href="#">
-                            <h4>
-                                Learn Designing
-                            </h4>
-                        </a>
-                        <p>
-                            When television was young, there was a hugely popular show based on the still popular fictional characte
-                        </p>
+                    <p>Tempus imperdiet nulla malpellen tesque Malesuada libero</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="counter-item">
+                    <h6>Total Courses</h6>
+                    <div class="count">
+                        <span class="counter">1450</span>
+                    </div>
+                    <p>Tempus imperdiet nulla malpellen tesque Malesuada libero</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="counter-item">
+                    <h6>Registered Enrolls</h6>
+                    <div class="count">
+                        <span class="counter">5697</span>
+                    </div>
+                    <p>Tempus imperdiet nulla malpellen tesque Malesuada libero</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="counter-item">
+                    <h6>Satisfaction rate</h6>
+                    <div class="count">
+                        <span class="counter">100</span>%
+                    </div>
+                    <p>Tempus imperdiet nulla malpellen tesque Malesuada libero</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- COunter Section END -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12">
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- About Section Start -->
+<section class="about-section section-padding">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-xl-6 col-lg-6">
+                <div class="section-heading ">
+                    <span class="subheading">Self Development Course</span>
+                    <h3>Get Instant Access To <span> Expert solution</span></h3>
+                    <p>The ultimate planning solution for busy women who want to reach their personal goals.Effortless comfortable eye-catching unique detail </p>
+                </div>
+
+                <div class="about-text-block">
+                    <div class="icon-box">
+                        <i class="flaticon-video-camera"></i>
+                    </div>
+                    <div class="about-desc">
+                        <h4>Sign up in website</h4>
+                        <p>The right mentoring relationship can be a powerful tool for professional growth. Bark up the right tree.</p>
                     </div>
                 </div>
-                <div class="single-popular-carusel">
-                    <div class="thumb-wrap relative">
-                        <div class="thumb relative">
-                            <div class="overlay overlay-bg"></div>
-                            <img class="img-fluid" src="img/xp2.jpg.pagespeed.ic.UOjfCS_PqE.jpg" alt="">
-                        </div>
-                        <div class="meta d-flex justify-content-between">
-                            <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                            <h4>$150</h4>
-                        </div>
+
+                <div class="about-text-block">
+                    <div class="icon-box">
+                        <i class="flaticon-flag"></i>
                     </div>
-                    <div class="details">
-                        <a href="#">
-                            <h4>
-                                Learn React js beginners
-                            </h4>
-                        </a>
-                        <p>
-                            When television was young, there was a hugely popular show based on the still popular fictional characte
-                        </p>
+                    <div class="about-desc">
+                        <h4>Enroll your course</h4>
+                        <p>The right mentoring relationship can be a powerful tool for professional growth. Bark up the right tree.</p>
                     </div>
                 </div>
-                <div class="single-popular-carusel">
-                    <div class="thumb-wrap relative">
-                        <div class="thumb relative">
-                            <div class="overlay overlay-bg"></div>
-                            <img class="img-fluid" src="img/xp3.jpg.pagespeed.ic.dGXSyUJ1Qn.jpg" alt="">
-                        </div>
-                        <div class="meta d-flex justify-content-between">
-                            <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                            <h4>$150</h4>
-                        </div>
+                <div class="about-text-block">
+                    <div class="icon-box border-none">
+                        <i class="flaticon-video-camera"></i>
                     </div>
-                    <div class="details">
-                        <a href="#">
-                            <h4>
-                                Learn Photography
-                            </h4>
-                        </a>
-                        <p>
-                            When television was young, there was a hugely popular show based on the still popular fictional characte
-                        </p>
+                    <div class="about-desc">
+                        <h4>Start from now</h4>
+                        <p>The right mentoring relationship can be a powerful tool for professional growth. Bark up the right tree.</p>
                     </div>
                 </div>
-                <div class="single-popular-carusel">
-                    <div class="thumb-wrap relative">
-                        <div class="thumb relative">
-                            <div class="overlay overlay-bg"></div>
-                            <img class="img-fluid" src="img/xp4.jpg.pagespeed.ic.OS8Fpax3wo.jpg" alt="">
-                        </div>
-                        <div class="meta d-flex justify-content-between">
-                            <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                            <h4>$150</h4>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <a href="#">
-                            <h4>
-                                Learn Surveying
-                            </h4>
-                        </a>
-                        <p>
-                            When television was young, there was a hugely popular show based on the still popular fictional characte
-                        </p>
-                    </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-6">
+                <div class="about-img">
+                    <img src="assets/images/bg/about-image.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="single-popular-carusel">
-                    <div class="thumb-wrap relative">
-                        <div class="thumb relative">
-                            <div class="overlay overlay-bg"></div>
-                            <img class="img-fluid" src="img/xp1.jpg.pagespeed.ic.-MfiiYTTYg.jpg" alt="">
-                        </div>
-                        <div class="meta d-flex justify-content-between">
-                            <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                            <h4>$150</h4>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <a href="#">
-                            <h4>
-                                Learn Designing
-                            </h4>
-                        </a>
-                        <p>
-                            When television was young, there was a hugely popular show based on the still popular fictional characte
-                        </p>
-                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section End -->
+<!-- Testimonial section start -->
+<section class="testimonial section-padding">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-7">
+                <div class="section-heading center-heading">
+                    <span class="subheading">Testimonials</span>
+                    <h3>Success Stories from person</h3>
+                    <p>The ultimate planning solution for
+                        busy women who want to reach their personal goals</p>
                 </div>
-                <div class="single-popular-carusel">
-                    <div class="thumb-wrap relative">
-                        <div class="thumb relative">
-                            <div class="overlay overlay-bg"></div>
-                            <img class="img-fluid" src="img/xp2.jpg.pagespeed.ic.UOjfCS_PqE.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-120">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="testimonials-slides owl-carousel owl-theme">
+                    <div class="testimonial-item">
+                        <i class="fa fa-quote-right"></i>
+                        <div class="client-info">
+                            <img src="assets/images/clients/test-1.jpg" alt="" class="img-fluid">
+                            <div class="testionial-author">Jessica Smith - Amazon co.</div>
                         </div>
-                        <div class="meta d-flex justify-content-between">
-                            <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                            <h4>$150</h4>
+                        <div class="testimonial-info-title">
+                            <h4>One of the easiest online accounting systems we've tried.</h4>
                         </div>
-                    </div>
-                    <div class="details">
-                        <a href="#">
-                            <h4>
-                                Learn React js beginners
-                            </h4>
-                        </a>
-                        <p>
-                            When television was young, there was a hugely popular show based on the still popular fictional characte
-                        </p>
-                    </div>
-                </div>
-                <div class="single-popular-carusel">
-                    <div class="thumb-wrap relative">
-                        <div class="thumb relative">
-                            <div class="overlay overlay-bg"></div>
-                            <img class="img-fluid" src="img/xp3.jpg.pagespeed.ic.dGXSyUJ1Qn.jpg" alt="">
-                        </div>
-                        <div class="meta d-flex justify-content-between">
-                            <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                            <h4>$150</h4>
+
+                        <div class="testimonial-info-desc">
+                            People who build their own home tend to be very courageous. These people are curious about life.
                         </div>
                     </div>
-                    <div class="details">
-                        <a href="#">
-                            <h4>
-                                Learn Photography
-                            </h4>
-                        </a>
-                        <p>
-                            When television was young, there was a hugely popular show based on the still popular fictional characte
-                        </p>
-                    </div>
-                </div>
-                <div class="single-popular-carusel">
-                    <div class="thumb-wrap relative">
-                        <div class="thumb relative">
-                            <div class="overlay overlay-bg"></div>
-                            <img class="img-fluid" src="img/xp4.jpg.pagespeed.ic.OS8Fpax3wo.jpg" alt="">
+
+
+                    <div class="testimonial-item">
+                        <i class="fa fa-quote-right"></i>
+                        <div class="client-info">
+                            <img src="assets/images/clients/test-2.jpg" alt="" class="img-fluid">
+                            <div class="testionial-author">Jessica Smith - Amazon co.</div>
                         </div>
-                        <div class="meta d-flex justify-content-between">
-                            <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                            <h4>$150</h4>
+                        <div class="testimonial-info-title">
+                            <h4>One of the easiest online accounting systems we've tried.</h4>
+                        </div>
+
+                        <div class="testimonial-info-desc">
+                            People who build their own home tend to be very courageous. These people are curious about life.
                         </div>
                     </div>
-                    <div class="details">
-                        <a href="#">
-                            <h4>
-                                Learn Surveying
-                            </h4>
-                        </a>
-                        <p>
-                            When television was young, there was a hugely popular show based on the still popular fictional characte
-                        </p>
+
+
+                    <div class="testimonial-item">
+                        <i class="fa fa-quote-right"></i>
+                        <div class="client-info">
+                            <img src="assets/images/clients/test-3.jpg" alt="" class="img-fluid">
+                            <div class="testionial-author">Jessica Smith - Amazon co.</div>
+                        </div>
+                        <div class="testimonial-info-title">
+                            <h4>One of the easiest online accounting systems we've tried.</h4>
+                        </div>
+
+                        <div class="testimonial-info-desc">
+                            They're thinking about what it means to live in a house, rather than just buying a commodity and making it work.
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <i class="fa fa-quote-right"></i>
+                        <div class="client-info">
+                            <img src="assets/images/clients/test-1.jpg" alt="" class="img-fluid">
+                            <div class="testionial-author">Jessica Smith - Amazon co.</div>
+                        </div>
+
+                        <div class="testimonial-info-title">
+                            <h4>One of the easiest online accounting systems we've tried.</h4>
+                        </div>
+
+                        <div class="testimonial-info-desc">
+                            People who build their own home tend to be very courageous. These people are curious about life.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
-<section class="search-course-area relative">
-    <div class="overlay overlay-bg"></div>
+<!-- Testimonial section End -->
+<!-- Blog Section Start -->
+<section class="blog-section section-padding">
     <div class="container">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-lg-6 col-md-6 search-course-left">
-                <h1 class="text-white">
-                    Get reduced fee <br>
-                    during this Summer!
-                </h1>
-                <p>
-                    inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards
-                    especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond
-                    reproach.
-                </p>
-                <div class="row details-content">
-                    <div class="col single-detials">
-                        <span class="lnr lnr-graduation-hat"></span>
-                        <a href="#">
-                            <h4>Expert Instructors</h4>
-                        </a>
-                        <p>
-                            Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-                        </p>
-                    </div>
-                    <div class="col single-detials">
-                        <span class="lnr lnr-license"></span>
-                        <a href="#">
-                            <h4>Certification</h4>
-                        </a>
-                        <p>
-                            Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-                        </p>
-                    </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-7">
+                <div class="section-heading center-heading">
+                    <span class="subheading">Blog News</span>
+                    <h3>Latest From The Blog</h3>
+                    <p>The ultimate planning solution for
+                        busy women who want to reach their personal goals</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 search-course-right section-gap">
-                <form class="form-wrap" action="#">
-                    <h4 class="text-white pb-20 text-center mb-30">Search for Available Course</h4>
-                    <input type="text" class="form-control" name="name" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'">
-                    <input type="phone" class="form-control" name="phone" placeholder="Your Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Phone Number'">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'">
-                    <div class="form-select" id="service-select">
-                        <select>
-                            <option datd-display="">Choose Course</option>
-                            <option value="1">Course One</option>
-                            <option value="2">Course Two</option>
-                            <option value="3">Course Three</option>
-                            <option value="4">Course Four</option>
-                        </select>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-xl-4 col-md-6 ">
+                <article class="blog-post-item">
+                    <div class="post-thumb">
+                        <img src="assets/images/blog/blog1.jpg" alt="" class="img-fluid">
                     </div>
-                    <button class="primary-btn text-uppercase">Submit</button>
+                    <div class="post-item mt-4">
+                        <div class="post-meta">
+                            <span class="post-author">Written by <a href="#">Admin</a></span>
+                            <span class="post-date"><i class="fa fa-calendar-alt mr-2"></i>May 9, 2020</span>
+                        </div>
+                        <h4 class="post-title"><a href="blog-single.html">How to become a best sale marketer in a month!</a></h4>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-xl-4 col-md-6">
+                <article class="blog-post-item">
+                    <div class="post-thumb">
+                        <img src="assets/images/blog/blog2.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="post-item mt-4">
+                        <div class="post-meta">
+                            <span class="post-author">Written by <a href="#">Admin</a></span>
+                            <span class="post-date"><i class="fa fa-calendar-alt mr-2"></i>May 9, 2020</span>
+                        </div>
+                        <h4 class="post-title"><a href="blog-single.html">How to become a best sale marketer in a month!</a></h4>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-xl-4 col-md-6">
+                <article class="blog-post-item">
+                    <div class="post-thumb">
+                        <img src="assets/images/blog/blog3.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="post-item mt-4">
+                        <div class="post-meta">
+                            <span class="post-author">Written by <a href="#">Admin</a></span>
+                            <span class="post-date"><i class="fa fa-calendar-alt mr-2"></i>May 9, 2020</span>
+                        </div>
+                        <h4 class="post-title"><a href="blog-single.html">How to become a best sale marketer in a month!</a></h4>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog Section End -->
+<section class="subscribe section-padding pt-0">
+    <div class="container">
+        <div class="row align-items-center form-inner">
+            <div class="col-lg-6 col-xl-6">
+                <div class="section-heading mb-0">
+                    <span class="subheading">Newsletter</span>
+                    <h3>Subscribe to get latest news</h3>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-6">
+                <form action="#" class="subscribe-form">
+                    <input type="text" placeholder="Enter Your Email" class="form-control">
+                    <a href="#" class="btn btn-main">Subscribe</a>
                 </form>
             </div>
         </div>
     </div>
 </section>
-
-
-<section class="upcoming-event-area section-gap">
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="menu-content pb-70 col-lg-8">
-                <div class="title text-center">
-                    <h1 class="mb-10">Upcoming Events of our Institute</h1>
-                    <p>If you are a serious astronomy fanatic like a lot of us</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="active-upcoming-event-carusel">
-                <div class="single-carusel row align-items-center">
-                    <div class="col-12 col-md-6 thumb">
-                        <img class="img-fluid" src="img/xe1.jpg.pagespeed.ic.ILvo55WxiH.jpg" alt="">
-                    </div>
-                    <div class="detials col-12 col-md-6">
-                        <p>25th February, 2018</p>
-                        <a href="#">
-                            <h4>The Universe Through
-                                A Child S Eyes</h4>
-                        </a>
-                        <p>
-                            For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and
-                            seeing magnificent displays in the heavens.
-                        </p>
-                    </div>
-                </div>
-                <div class="single-carusel row align-items-center">
-                    <div class="col-12 col-md-6 thumb">
-                        <img class="img-fluid" src="img/xe2.jpg.pagespeed.ic.LTf87DI54f.jpg" alt="">
-                    </div>
-                    <div class="detials col-12 col-md-6">
-                        <p>25th February, 2018</p>
-                        <a href="#">
-                            <h4>The Universe Through
-                                A Child S Eyes</h4>
-                        </a>
-                        <p>
-                            For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and
-                            seeing magnificent displays in the heavens.
-                        </p>
-                    </div>
-                </div>
-                <div class="single-carusel row align-items-center">
-                    <div class="col-12 col-md-6 thumb">
-                        <img class="img-fluid" src="img/xe1.jpg.pagespeed.ic.ILvo55WxiH.jpg" alt="">
-                    </div>
-                    <div class="detials col-12 col-md-6">
-                        <p>25th February, 2018</p>
-                        <a href="#">
-                            <h4>The Universe Through
-                                A Child S Eyes</h4>
-                        </a>
-                        <p>
-                            For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and
-                            seeing magnificent displays in the heavens.
-                        </p>
-                    </div>
-                </div>
-                <div class="single-carusel row align-items-center">
-                    <div class="col-12 col-md-6 thumb">
-                        <img class="img-fluid" src="img/xe1.jpg.pagespeed.ic.ILvo55WxiH.jpg" alt="">
-                    </div>
-                    <div class="detials col-12 col-md-6">
-                        <p>25th February, 2018</p>
-                        <a href="#">
-                            <h4>The Universe Through
-                                A Child S Eyes</h4>
-                        </a>
-                        <p>
-                            For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and
-                            seeing magnificent displays in the heavens.
-                        </p>
-                    </div>
-                </div>
-                <div class="single-carusel row align-items-center">
-                    <div class="col-12 col-md-6 thumb">
-                        <img class="img-fluid" src="img/xe2.jpg.pagespeed.ic.LTf87DI54f.jpg" alt="">
-                    </div>
-                    <div class="detials col-12 col-md-6">
-                        <p>25th February, 2018</p>
-                        <a href="#">
-                            <h4>The Universe Through
-                                A Child S Eyes</h4>
-                        </a>
-                        <p>
-                            For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and
-                            seeing magnificent displays in the heavens.
-                        </p>
-                    </div>
-                </div>
-                <div class="single-carusel row align-items-center">
-                    <div class="col-12 col-md-6 thumb">
-                        <img class="img-fluid" src="img/xe1.jpg.pagespeed.ic.ILvo55WxiH.jpg" alt="">
-                    </div>
-                    <div class="detials col-12 col-md-6">
-                        <p>25th February, 2018</p>
-                        <a href="#">
-                            <h4>The Universe Through
-                                A Child S Eyes</h4>
-                        </a>
-                        <p>
-                            For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and
-                            seeing magnificent displays in the heavens.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="review-area section-gap relative">
-    <div class="overlay overlay-bg"></div>
-    <div class="container">
-        <div class="row">
-            <div class="active-review-carusel">
-                <div class="single-review item">
-                    <div class="title justify-content-start d-flex">
-                        <a href="#">
-                            <h4>Fannie Rowe</h4>
-                        </a>
-                        <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker.
-                    </p>
-                </div>
-                <div class="single-review item">
-                    <div class="title justify-content-start d-flex">
-                        <a href="#">
-                            <h4>Hulda Sutton</h4>
-                        </a>
-                        <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker.
-                    </p>
-                </div>
-                <div class="single-review item">
-                    <div class="title justify-content-start d-flex">
-                        <a href="#">
-                            <h4>Fannie Rowe</h4>
-                        </a>
-                        <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker.
-                    </p>
-                </div>
-                <div class="single-review item">
-                    <div class="title justify-content-start d-flex">
-                        <a href="#">
-                            <h4>Hulda Sutton</h4>
-                        </a>
-                        <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker.
-                    </p>
-                </div>
-                <div class="single-review item">
-                    <div class="title justify-content-start d-flex">
-                        <a href="#">
-                            <h4>Fannie Rowe</h4>
-                        </a>
-                        <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker.
-                    </p>
-                </div>
-                <div class="single-review item">
-                    <div class="title justify-content-start d-flex">
-                        <a href="#">
-                            <h4>Hulda Sutton</h4>
-                        </a>
-                        <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker.
-                    </p>
-                </div>
-                <div class="single-review item">
-                    <img src="{{ asset('front/img/r1.html') }}" alt="">
-                    <div class="title justify-content-start d-flex">
-                        <a href="#">
-                            <h4>Fannie Rowe</h4>
-                        </a>
-                        <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker.
-                    </p>
-                </div>
-                <div class="single-review item">
-                    <div class="title justify-content-start d-flex">
-                        <a href="#">
-                            <h4>Hulda Sutton</h4>
-                        </a>
-                        <div class="star">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                    <p>
-                        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-                        speaker.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="cta-one-area relative section-gap">
-    <div class="container">
-        <div class="overlay overlay-bg"></div>
-        <div class="row justify-content-center">
-            <div class="wrap">
-                <h1 class="text-white">Become an instructor</h1>
-                <p>
-                    There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s
-                    exciting to think about setting up your own viewing station whether that is on the deck.
-                </p>
-                <a class="primary-btn wh" href="#">Apply for the post</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="blog-area section-gap" id="blog">
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="menu-content pb-70 col-lg-8">
-                <div class="title text-center">
-                    <h1 class="mb-10">Latest posts from our Blog</h1>
-                    <p>In the history of modern astronomy there is.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 single-blog">
-                <div class="thumb">
-                    <img class="img-fluid" src="img/b1.jpg" alt="">
-                </div>
-                <p class="meta">25 April, 2018 | By <a href="#">Mark Wiens</a></p>
-                <a href="blog-single.html">
-                    <h5>Addiction When Gambling Becomes A Problem</h5>
-                </a>
-                <p>
-                    Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in
-                    front of their.
-                </p>
-                <a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>
-            </div>
-            <div class="col-lg-3 col-md-6 single-blog">
-                <div class="thumb">
-                    <img class="img-fluid" src="img/b2.jpg" alt="">
-                </div>
-                <p class="meta">25 April, 2018 | By <a href="#">Mark Wiens</a></p>
-                <a href="blog-single.html">
-                    <h5>Computer Hardware Desktops And Notebooks</h5>
-                </a>
-                <p>
-                    Ah, the technical interview. Nothing like it. Not only does it cause anxiety, but it causes anxiety for
-                    several different reasons.
-                </p>
-                <a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>
-            </div>
-            <div class="col-lg-3 col-md-6 single-blog">
-                <div class="thumb">
-                    <img class="img-fluid" src="img/b3.jpg" alt="">
-                </div>
-                <p class="meta">25 April, 2018 | By <a href="#">Mark Wiens</a></p>
-                <a href="blog-single.html">
-                    <h5>Make Myspace Your Best Designed Space</h5>
-                </a>
-                <p>
-                    Plantronics with its GN Netcom wireless headset creates the next generation of wireless headset and other
-                    products such as wireless.
-                </p>
-                <a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>
-            </div>
-            <div class="col-lg-3 col-md-6 single-blog">
-                <div class="thumb">
-                    <img class="img-fluid" src="img/b4.jpg" alt="">
-                </div>
-                <p class="meta">25 April, 2018 | By <a href="#">Mark Wiens</a></p>
-                <a href="blog-single.html">
-                    <h5>Video Games Playing With Imagination</h5>
-                </a>
-                <p>
-                    About 64% of all on-line teens say that do things online that they wouldn’t want their parents to know
-                    about. 11% of all adult internet
-                </p>
-                <a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="cta-two-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 cta-left">
-                <h1>Not Yet Satisfied with our Trend?</h1>
-            </div>
-            <div class="col-lg-4 cta-right">
-                <a class="primary-btn wh" href="#">view our blog</a>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- Footer section start -->
 @endsection
