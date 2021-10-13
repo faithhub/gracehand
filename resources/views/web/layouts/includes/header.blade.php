@@ -22,8 +22,8 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid container-padding">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/images/dark-logo.png" alt="Eduhash" class="img-fluid">
-          <!-- <img src="{{ asset('web/logo/trans_logo_2.png') }}" alt="Eduhash" class="img-fluid"> -->
+          <!-- <img src="assets/images/dark-logo.png" alt="Eduhash" class="img-fluid"> -->
+          <img src="{{ asset('web/logo/trans_logo_2.png') }}" alt="Eduhash" class="img-fluid" style="max-width: 90px;">
         </a>
 
         <!-- Toggler -->

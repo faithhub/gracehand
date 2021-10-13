@@ -163,6 +163,13 @@ BUTTONS STYLE
     transform: translateY(0px);
     transition: all 0.3s ease-in-out;
 }
+.input-text, input[type=email], input[type=password], input[type=number], input[type=search], input[type=tel], input[type=text], input[type=url], textarea{
+    padding: .53em;
+    height: 55px;
+    padding-left: 20px;
+    background: #F5F5F5;
+    border: 1px solid #F5F5F5;
+}
 
 .btn:focus {
     box-shadow: none !important;

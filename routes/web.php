@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,6 +50,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function 
   Route::get('/partnership', [\App\Http\Controllers\Admin\PartnershipController::class, 'index']);
   Route::get('/view-partnership/{id}', [\App\Http\Controllers\Admin\PartnershipController::class, 'view_partnership']);
   Route::get('/edit-partnership/{id}', [\App\Http\Controllers\Admin\PartnershipController::class, 'edit_partnership']);
+
+
   // Route::post('/edit-user', [\App\Http\Controllers\Admin\UserController::class, 'edit']);
   Route::post('/delete-partnership', [\App\Http\Controllers\Admin\PartnershipController::class, 'delete_partnership']);
   Route::get('courses', [\App\Http\Controllers\Admin\CourseController::class, 'index']);
@@ -69,8 +72,11 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function 
   Route::post('/add-training', [\App\Http\Controllers\Admin\TrainingController::class, 'addNewTraining']);
   Route::get('/add-chapters/{trainingId}', [\App\Http\Controllers\Admin\TrainingController::class, 'addChapters']);
   Route::post('/add-chapter', [\App\Http\Controllers\Admin\TrainingController::class, 'addChapter']);
-  Route::post('/publish', [\App\Http\Controllers\Admin\TrainingController::class, 'publish']);
-  Route::match(['get', 'post'], '/about-us', [\App\Http\Controllers\Admin\SettingController::class, 'about_us']);
-  Route::match(['get', 'post'], '/contact-us', [\App\Http\Controllers\Admin\SettingController::class, 'contact_us']);
-  Route::match(['get', 'post'], '/slider', [\App\Http\Controllers\Admin\SettingController::class, 'slider']);
+  Route::post('/publish', [ Admin\TrainingController::class, 'publish']);
+
+  //Web Settings
+  Route::match(['get', 'post'], '/web-settings', [\App\Http\Controllers\Admin\WebSettingsController::class, 'index'])->name('admin.web-settings');
+  Route::match(['get', 'post'], '/about-us', [\App\Http\Controllers\Admin\WebSettingsController::class, 'about_us']);
+  Route::match(['get', 'post'], '/contact-us', [\App\Http\Controllers\Admin\WebSettingsController::class, 'contact_us']);
+  Route::match(['get', 'post'], '/slider', [\App\Http\Controllers\Admin\WebSettingsController::class, 'slider']);
 });

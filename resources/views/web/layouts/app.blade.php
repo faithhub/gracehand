@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
-<!-- Mirrored from themeturn.com/tf-db/eduhash/theme/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jul 2021 18:27:18 GMT -->
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Education LMS template by Dreambuzz">
-    <meta name="keywords" content="Eduhash,education,lms,seo,course,online,learning,caoch,training,tutor">
-    <meta name="author" content="themeturn.com">
+    <meta name="description" content="GraceHand Research Institute">
+    <meta name="keywords" content="GraceHand,Research,Institute,education,lms,seo,course,online,learning,caoch,training,tutor">
+    <meta name="author" content="amaofaith.com">
 
-    <title>Eduhash - Education LMS template</title>
+    <title>GraceHand Research Institute - {{$title ?? ''}}</title>
     @include('web.layouts.includes.style')
     @include('web.layouts.includes.alert')
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
 </head>
 
 <body id="top-header">
@@ -33,7 +34,4 @@
     @include('web.layouts.includes.footer')
     @include('web.layouts.includes.script')
 </body>
-
-<!-- Mirrored from themeturn.com/tf-db/eduhash/theme/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jul 2021 18:28:02 GMT -->
-
 </html>

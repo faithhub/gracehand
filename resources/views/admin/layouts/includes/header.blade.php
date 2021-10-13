@@ -10,8 +10,7 @@
                 <div class="col-lg-12">
                     <div class="menu-full-width">
                         <div class="logo">
-							<a href="index.html"><img src="{{ asset('web/logo/trans_logo_2.png') }}" alt="logo" style="width: 30px; height: auto;"><b style="font-size: 30px; color:#26ae61" class="m-2 mt-5">GraceHands</b></a>
-							{{-- <img src="{{ asset('web/logo/trans_logo_2.png') }}" alt="" style="width: 80px; height: auto;"> --}}
+							<a href="index.html"><img src="{{ asset('uploads/logo/trans_logo_2.png') }}" alt="logo" style="width: 30px; height: auto;"><b style="font-size: 30px; color:#26ae61" class="m-2 mt-5">GraceHands</b></a>
                         </div><!-- end logo -->
                         <div class="logo-right-content">
                             <div class="header-action-button d-flex align-items-center">

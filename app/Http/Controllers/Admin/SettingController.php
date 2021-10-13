@@ -61,40 +61,10 @@ class SettingController extends Controller
             return view('admin.settings.index', $data);
         }
     }
+    
     public function change_password()
     {
         $data['title'] = 'Change Password';
         return view('admin.settings.password', $data);
-    }
-    public function about_us(Request $request)
-    {
-        if ($_POST) {
-            # code...
-        } else {
-            $data['title'] = 'About Us';
-            return view('admin.web_settings.about', $data);
-        }
-    }
-
-    public function contact_us(Request $request)
-    {
-        if ($_POST) {
-            # code...
-        } else {
-            $data['title'] = 'Contact Us';
-            return view('admin.web_settings.contact', $data);
-        }
-    }
-
-    public function slider(Request $request)
-    {
-        if ($_POST) {
-            # code...
-        } else {
-            $data['title'] = 'Home Page Slider';
-            $data['sn'] = 1;
-            $data['sliders'] = Slider::all();
-            return view('admin.web_settings.slider', $data);
-        }
     }
 }
