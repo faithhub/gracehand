@@ -28,27 +28,33 @@ class HomeController extends Controller
    */
   public function index()
   {
-    return view('web.index');
+    $data['title'] = "Home";
+    return view('web.index', $data);
   }
   public function about()
   {
-    return view('web.about');
+    $data['title'] = "About Us";
+    return view('web.about', $data);
   }
   public function contact()
   {
-    return view('web.contact');
+    $data['title'] = "Contact Us";
+    return view('web.contact', $data);
   }
   public function courses()
   {
-    return view('web.courses');
+    $data['title'] = "Home Page";
+    return view('web.courses', $data);
   }
   public function course_info()
   {
+    $data['title'] = "Home Page";
     return view('web.course_info');
   }
   public function partnership()
   {
-    return view('web.partnership');
+    $data['title'] = "Partnership";
+    return view('web.partnership'.$data);
   }
   public function create_partnership(Request $request)
   {
