@@ -94,10 +94,11 @@
 
             <div class="col-xl-6 pl-5 col-lg-6">
                 <div class="section-heading mt-4 mt-lg-0 ">
-                    <span class="subheading">Self Development Course</span>
-                    <h3>Get Instant Access To <span> Expert solution</span></h3>
-                    <p>The ultimate planning solution for busy women who want to reach their personal goals.Effortless comfortable eye-catching unique detail </p>
-
+                    <span class="subheading">About Us</span>
+                    <h3>Gracehands Reserach <span> Institute</span></h3>
+                    <p style="text-align: justify;">
+                        {!!config("settings")->about_content!!}
+                    </p>
                 </div>
                 <ul class="about-features">
                     <li>
