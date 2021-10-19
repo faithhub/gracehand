@@ -53,26 +53,25 @@
                     <div class="col-lg-12 col-md-6">
                         <div class="contact-item">
                             <p>Email Us</p>
-                            <h4><a href="http://themeturn.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9feceaefeff0edebdffaf2fef6f3b1fcf0f2">[email&#160;protected]</a></h4>
+                            <h4><a href='mailto:{{config("settings")->email}}' class="__cf_email__" data-cfemail="9feceaefeff0edebdffaf2fef6f3b1fcf0f2">{{config("settings")->email}}</a></h4>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-6">
                         <div class="contact-item">
                             <p>Make a Call</p>
-                            <h4>+45 234 345467</h4>
+                            <h4>{{config("settings")->phone}}</h4>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-6">
                         <div class="contact-item">
                             <p>Corporate Office</p>
-                            <h4>Moon Street Light Avenue, 14/05
-                                Jupiter, JP 80630 </h4>
+                            <h4>{{config("settings")->address}}</h4>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-8">
-                <form class="contact__form form-row " method="post" action="http://themeturn.com/tf-db/eduhash/theme/mail.php" id="contactForm">
+                <form class="contact__form form-row " method="post" action="" id="contactForm">
                     <div class="row">
                         <div class="col-12">
                             <div class="alert alert-success contact__msg" style="display: none" role="alert">

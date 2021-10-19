@@ -21,7 +21,7 @@ class CreateSettingsTable extends Migration
             $table->string('facebook_link')->nullable();
             $table->string('twitter_link')->nullable();
             $table->string('linkedin_link')->nullable();
-            $table->string('about_content')->nullable();
+            $table->longText('about_content')->nullable();
             $table->string('ceo_name')->nullable();
             $table->string('ceo_picture')->nullable();
             $table->string('email')->nullable();

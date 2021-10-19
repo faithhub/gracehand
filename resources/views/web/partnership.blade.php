@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <div class="row course_boxes">
+    <div class="row course_boxes mb-4">
 
       <!-- Popular Course Item -->
       <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 course_box">
@@ -86,6 +86,6 @@
       </div>
     </div>
   </div>
-</div>v>
+</div>
 
 @endsection

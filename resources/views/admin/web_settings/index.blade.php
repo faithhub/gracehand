@@ -18,6 +18,7 @@
 
 <form method="POST" action="{{ url('admin/web-settings') }}" enctype="multipart/form-data">
   @csrf
+  <input type="hidden" value="index" name="type">
   <div class="row mt-5">
     <div class="col-lg-12">
     </div><!-- end col-lg-12 -->
@@ -36,7 +37,11 @@
                   <div class="user-profile-action-wrap mb-2">
                     <div class="user-profile-action mb-4 d-flex align-items-center">
                       <div class="user-pro-img">
-                          <img src='data:image/;base64,{{ substr(config("settings")->website_logo, 5) ?? asset("images/avatar.jpg")}}' alt="user-image" class="img-fluid radius-round border">
+                        @if(config("settings")->website_logo)
+                        <img src='data:image/;base64,{{ substr(config("settings")->website_logo, 5) }}' alt="GraceHand Logo" class="img-fluid radius-round border">
+                        @else
+                        <img src='{{ asset("uploads/logo/logo.png") }}' alt="GraceHand Logo" class="img-fluid radius-round border">
+                        @endif
                       </div>
                       <div class="upload-btn-box">
                         <input type="file" name="website_logo" accept="image/png, image/jpeg, image/jpg" max="500000">
@@ -52,7 +57,12 @@
                   <div class="user-profile-action-wrap mb-2">
                     <div class="user-profile-action mb-4 d-flex align-items-center">
                       <div class="user-pro-img">
-                          <img src='data:image/;base64,{{ substr(config("settings")->dashboard_logo, 5) ?? asset("images/avatar.jpg")}}' alt="user-image" class="img-fluid radius-round border">
+                        
+                      @if(config("settings")->dashboard_logo)
+                        <img src='data:image/;base64,{{ substr(config("settings")->dashboard_logo, 5)}}' alt="GraceHand Logo" class="img-fluid radius-round border">
+                        @else
+                        <img src='{{ asset("uploads/logo/logo_2.png") }}' alt="GraceHand Logo" class="img-fluid radius-round border">
+                        @endif
                       </div>
                       <div class="upload-btn-box">
                         <input type="file" name="dashboard_logo" accept="image/png, image/jpeg, image/jpg" max="500000">
@@ -70,7 +80,7 @@
                       <h3 class="widget-title">Website Name</h3>
                       <div class="form-group">
                         <span class="la la-user form-icon"></span>
-                        <input class="form-control @error('website_name') is-invalid @enderror" type="text" name="website_name">
+                        <input class="form-control @error('website_name') is-invalid @enderror" value='{{config("settings")->website_name}}' type="text" name="website_name">
                         @error('website_name')
                         <span class="invalid-feedback mb-2" role="alert" style="display: block">
                           <strong>{{ $message }}</strong>

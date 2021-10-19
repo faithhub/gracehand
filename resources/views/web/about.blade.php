@@ -87,9 +87,11 @@
 
             <div class="col-xl-6 pl-5 col-lg-6">
                 <div class="section-heading mt-4 mt-lg-0 ">
-                    <span class="subheading">Self Development Course</span>
-                    <h3>Get Instant Access To <span> Expert solution</span></h3>
-                    <p>The ultimate planning solution for busy women who want to reach their personal goals.Effortless comfortable eye-catching unique detail </p>
+                    <span class="subheading">About Us</span>
+                    <h3>Gracehands Reserach <span> Institute</span></h3>
+                    <p style="text-align: justify;">
+                        {!!config("settings")->about_content!!}
+                    </p>
 
                 </div>
                 <ul class="about-features">
@@ -166,7 +168,7 @@
 
 
 <!-- Team section start -->
-<section class="team pt-100">
+<!-- <section class="team pt-100">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7 col-xl-7">
@@ -239,7 +241,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- Team section End -->
 <!-- Testimonial section start -->
 <section class="testimonial-2 section-padding">
@@ -330,12 +332,12 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-7">
                 <div class="section-heading center-heading mb-0">
-                    <span class="subheading">be a instructor</span>
-                    <h3>Want to Become an Instructor ?</h3>
+                    <span class="subheading">be a Partner</span>
+                    <h3>Want to partner with us ?</h3>
                     <p class="mb-4">Join millions of people from around the world
                         learning together. Online learning is as easy and
                         natural as chatting.</p>
-                    <a href="#" class="btn btn-main">Become Instructor</a>
+                    <a href="{{ route('partnership') }}" class="btn btn-main">Become PARTNER</a>
                 </div>
             </div>
         </div>

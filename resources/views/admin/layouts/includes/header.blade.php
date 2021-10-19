@@ -1,8 +1,5 @@
+<!-- Menu -->
 
-
-	
-	<!-- Menu -->
-	
 <header class="header-area header-desktop">
     <div class="header-menu-wrapper">
         <div class="container-fluid">
@@ -10,7 +7,13 @@
                 <div class="col-lg-12">
                     <div class="menu-full-width">
                         <div class="logo">
-							<a href="index.html"><img src="{{ asset('uploads/logo/trans_logo_2.png') }}" alt="logo" style="width: 30px; height: auto;"><b style="font-size: 30px; color:#26ae61" class="m-2 mt-5">GraceHands</b></a>
+                            <a href="{{ url('admin') }}">
+                                @if(config("settings")->dashboard_logo)
+                                <img src='data:image/;base64,{{ substr(config("settings")->dashboard_logo, 5) }}' alt="GraceHand Logo" style="width: 30px; height: auto;">
+                                @else
+                                <img src='{{ asset("uploads/logo/logo.png") }}' alt="GraceHand Logo" style="width: 30px; height: auto;">
+                                @endif
+                                <b style="font-size: 30px; color:#26ae61" class="m-2 mt-5">GraceHands</b></a>
                         </div><!-- end logo -->
                         <div class="logo-right-content">
                             <div class="header-action-button d-flex align-items-center">
@@ -44,12 +47,12 @@
                                                     <div class="mess__body">
                                                         <ul class="list-items">
                                                             <li class="mb-0">
-                                                                <a href="{{ url('user/profile') }}" class="d-block">
+                                                                <a href="{{ url('admin/profile') }}" class="d-block">
                                                                     <i class="la la-user"></i> Profile
                                                                 </a>
                                                             </li>
-                                                            <li class="mb-0">                                                                
-                                                                <a href="{{ url('user/change-password') }}" class="d-block">
+                                                            <li class="mb-0">
+                                                                <a href="{{ url('admin/change-password') }}" class="d-block">
                                                                     <i class="la la-lock"></i> Change Password
                                                                 </a>
                                                             </li>
@@ -79,7 +82,7 @@
                                     </div>
                                 </div>
                             </div>
-                           
+
                         </div><!-- end logo-right-content -->
                     </div><!-- end menu-full-width -->
                 </div><!-- end col-lg-12 -->

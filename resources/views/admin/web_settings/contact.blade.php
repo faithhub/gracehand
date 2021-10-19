@@ -16,8 +16,9 @@
   </div><!-- end col-lg-12 -->
 </div><!-- end row -->
 
-<form method="POST" action="{{ url('admin/contact-us') }}">
+<form method="POST" action="{{ url('admin/web-settings') }}" enctype="multipart/form-data">
   @csrf
+  <input type="hidden" value="contact" name="type">
   <div class="row mt-5">
     <div class="col-lg-12">
     </div><!-- end col-lg-12 -->
@@ -35,11 +36,10 @@
                   <div class="col-lg-12">
                     <div class="input-box">
                       <h3 class="widget-title">Email</h3>
-                      {{-- <label class="label-text">Training Title</label> --}}
                       <div class="form-group">
                         <span class="la la-envelope form-icon"></span>
-                        <input class="form-control @error('contact_email') is-invalid @enderror" type="text" name="contact_email">
-                        @error('contact_email')
+                        <input class="form-control @error('email') is-invalid @enderror" value='{{config("settings")->email}}' type="email" name="email">
+                        @error('email')
                         <span class="invalid-feedback mb-2" role="alert" style="display: block">
                           <strong>{{ $message }}</strong>
                         </span>
@@ -53,8 +53,8 @@
                       {{-- <label class="label-text">Training Title</label> --}}
                       <div class="form-group">
                         <span class="la la-phone form-icon"></span>
-                        <input class="form-control @error('contact_mobile') is-invalid @enderror" type="number" name="contact_mobile">
-                        @error('contact_mobile')
+                        <input class="form-control @error('phone') is-invalid @enderror" value='{{config("settings")->phone}}' type="text" name="phone">
+                        @error('phone')
                         <span class="invalid-feedback mb-2" role="alert" style="display: block">
                           <strong>{{ $message }}</strong>
                         </span>
@@ -68,8 +68,8 @@
                       {{-- <label class="label-text">Training Title</label> --}}
                       <div class="form-group">
                         <span class="la la-map form-icon"></span>
-                        <input class="form-control @error('contact_address') is-invalid @enderror" type="text" name="contact_address">
-                        @error('contact_address')
+                        <input class="form-control @error('address') is-invalid @enderror" value='{{config("settings")->address}}' type="text" name="address">
+                        @error('address')
                         <span class="invalid-feedback mb-2" role="alert" style="display: block">
                           <strong>{{ $message }}</strong>
                         </span>
@@ -80,11 +80,10 @@
                   <div class="col-lg-12">
                     <div class="input-box">
                       <h3 class="widget-title">Short Description</h3>
-                      {{-- <label class="label-text">Description</label> --}}
                       <div class="form-group">
                         <span class="la la-map form-icon"></span>
-                        <textarea class="form-control @error('contact_description') is-invalid @enderror" name="contact_description" id="editor"></textarea>
-                        @error('contact_description')
+                        <textarea class="form-control @error('short_desc') is-invalid @enderror" name="short_desc" id="editor">{{config("settings")->short_desc}}</textarea>
+                        @error('short_desc')
                         <span class="invalid-feedback mb-2" role="alert" style="display: block">
                           <strong>{{ $message }}</strong>
                         </span>

@@ -23,7 +23,7 @@
         <li class="{{ request()->is('admin/about-us*')  || request()->is('admin/contact-us*') || request()->is('admin/slider*') || request()->is('admin/web-settings*')  ? 'page-active' : '' }}"{{ request()->is('admin/slider*')  ? 'page-active' : '' }}>
           <a href="#"><i class="la la-bookmark icon-element"></i> Website Settings <span class="la la-caret-down btn-toggle"></span></a>
           <ul class="dropdown-menu-item">
-            <li><a href="{{ url('admin/web-settings') }}">Web</a></li>
+            <li><a href="{{ url('admin/web-settings') }}">Web Settings</a></li>
             <li><a href="{{ url('admin/about-us') }}">About Us</a></li>
             <li><a href="{{ url('admin/contact-us') }}">Contact Us</a></li>
             <li><a href="{{ url('admin/slider') }}">Sliders & Banners</a></li>

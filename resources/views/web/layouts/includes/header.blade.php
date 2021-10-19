@@ -7,9 +7,9 @@
         </div>
         <div class="col-lg-6 col-md-6">
           <div class="header-right float-lg-right">
-            <a href="#">Join Now</a>
+            <!-- <a href="#">Join Now</a>
             <a href="#">Courses</a>
-            <a href="#">Membership Login</a>
+            <a href="#">Membership Login</a> -->
           </div>
         </div>
       </div>
@@ -17,17 +17,20 @@
   </div>
 
   <!-- Main Menu Start -->
-
   <div class="site-navigation main_menu menu-transparent" id="mainmenu-area">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid container-padding">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="{{ url('/') }}">
           <!-- <img src="assets/images/dark-logo.png" alt="Eduhash" class="img-fluid"> -->
-          <img src="{{ asset('web/logo/trans_logo_2.png') }}" alt="Eduhash" class="img-fluid" style="max-width: 90px;">
+          
+          @if(config("settings")->website_logo)
+          <img src='data:image/;base64,{{ substr(config("settings")->website_logo, 5)}}' alt="GraceHand Logo" class="img-fluid" style="max-width: 90px;">
+          @else
+          <img src='{{ asset("uploads/logo/logo.png") }}' alt="GraceHand Logo" class="img-fluid" style="max-width: 90px;">
+          @endif
         </a>
 
         <!-- Toggler -->
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="fa fa-bars"></span>
         </button>
@@ -52,10 +55,10 @@
                 Training<i class="fa fa-angle-down"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbar3">
-                <a class="dropdown-item " href="course-grid.html">
+                <a class="dropdown-item " href="">
                   Short Time Trainings
                 </a>
-                <a class="dropdown-item " href="course-grid-2.html">
+                <a class="dropdown-item " href="">
                   Full Package Training
                 </a>
               </div>

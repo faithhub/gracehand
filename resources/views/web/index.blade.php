@@ -128,7 +128,7 @@
                     <span class="subheading">Trending Courses</span>
                     <h3>Popular Online Courses Around You</h3>
                     <p>The ultimate planning solution for
-                        busy women who want to reach their personal goals</p>
+                       students who want to reach their personal goals</p>
                 </div>
             </div>
         </div>
@@ -142,8 +142,8 @@
                     </div>
 
                     <div class="course-content">
-                        <span class="course-cat">Graphic design</span>
-                        <h4><a href="#">Information About UI/UX Design Degree</a></h4>
+                        <span class="course-cat">SPSS</span>
+                        <h4><a href="#">Information About Quantitative Analysis with SPSS</a></h4>
                         <div class="course-meta">
                             <span class="course-student"><i class="fa fa-user-alt"></i>340 Students</span>
                             <span class="course-duration"><i class="far fa-file-alt"></i>82 Lessons</span>
@@ -160,8 +160,8 @@
                     </div>
 
                     <div class="course-content">
-                        <span class="course-cat">Web design</span>
-                        <h4><a href="#">React – The Complete Guide (React Router)</a></h4>
+                        <span class="course-cat">Data Analysis</span>
+                        <h4><a href="#">Information to Data Analysis</a></h4>
                         <div class="course-meta">
                             <span class="course-student"><i class="fa fa-user-alt"></i>340 Students</span>
                             <span class="course-duration"><i class="far fa-file-alt"></i>82 Lessons</span>
@@ -178,8 +178,8 @@
                     </div>
 
                     <div class="course-content">
-                        <span class="course-cat">photography</span>
-                        <h4><a href="#">Photography Crash Course for Photographer</a></h4>
+                        <span class="course-cat">Research Analysis</span>
+                        <h4><a href="#">Introduction to Research Analysis</a></h4>
 
                         <div class="course-meta">
                             <span class="course-student"><i class="fa fa-user-alt"></i>340 Students</span>
@@ -193,7 +193,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <div class="text-center mt-5">
-                    Take the control of their life back and start doing things to make their dream come true. <a href="course.html" class="font-weight-bold text-underline">View all courses </a>
+                    Take the control of their life back and start doing things to make their dream come true. <a href="#" class="font-weight-bold text-underline">View all courses </a>
                 </div>
             </div>
         </div>
@@ -267,7 +267,7 @@
 
 
 <!-- About Section Start -->
-<section class="about-section section-padding">
+<!-- <section class="about-section section-padding">
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-xl-6 col-lg-6">
@@ -314,7 +314,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- About Section End -->
 <!-- Testimonial section start -->
 <section class="testimonial section-padding">
@@ -404,70 +404,9 @@
 </section>
 <!-- Testimonial section End -->
 <!-- Blog Section Start -->
-<section class="blog-section section-padding">
-    <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-lg-7">
-                <div class="section-heading center-heading">
-                    <span class="subheading">Blog News</span>
-                    <h3>Latest From The Blog</h3>
-                    <p>The ultimate planning solution for
-                        busy women who want to reach their personal goals</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-xl-4 col-md-6 ">
-                <article class="blog-post-item">
-                    <div class="post-thumb">
-                        <img src="assets/images/blog/blog1.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="post-item mt-4">
-                        <div class="post-meta">
-                            <span class="post-author">Written by <a href="#">Admin</a></span>
-                            <span class="post-date"><i class="fa fa-calendar-alt mr-2"></i>May 9, 2020</span>
-                        </div>
-                        <h4 class="post-title"><a href="blog-single.html">How to become a best sale marketer in a month!</a></h4>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-lg-4 col-xl-4 col-md-6">
-                <article class="blog-post-item">
-                    <div class="post-thumb">
-                        <img src="assets/images/blog/blog2.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="post-item mt-4">
-                        <div class="post-meta">
-                            <span class="post-author">Written by <a href="#">Admin</a></span>
-                            <span class="post-date"><i class="fa fa-calendar-alt mr-2"></i>May 9, 2020</span>
-                        </div>
-                        <h4 class="post-title"><a href="blog-single.html">How to become a best sale marketer in a month!</a></h4>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-lg-4 col-xl-4 col-md-6">
-                <article class="blog-post-item">
-                    <div class="post-thumb">
-                        <img src="assets/images/blog/blog3.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="post-item mt-4">
-                        <div class="post-meta">
-                            <span class="post-author">Written by <a href="#">Admin</a></span>
-                            <span class="post-date"><i class="fa fa-calendar-alt mr-2"></i>May 9, 2020</span>
-                        </div>
-                        <h4 class="post-title"><a href="blog-single.html">How to become a best sale marketer in a month!</a></h4>
-
-                    </div>
-                </article>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- <se ion> -->
 <!-- Blog Section End -->
-<section class="subscribe section-padding pt-0">
+<!-- <section class="subscribe section-padding pt-0">
     <div class="container">
         <div class="row align-items-center form-inner">
             <div class="col-lg-6 col-xl-6">
@@ -484,6 +423,6 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- Footer section start -->
 @endsection
