@@ -54,7 +54,7 @@ class HomeController extends Controller
   public function partnership()
   {
     $data['title'] = "Partnership";
-    return view('web.partnership'.$data);
+    return view('web.partnership', $data);
   }
   public function create_partnership(Request $request)
   {
