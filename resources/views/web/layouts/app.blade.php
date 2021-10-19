@@ -7,13 +7,13 @@
     <meta name="author" content="amaofaith.com">
 
     <title>GraceHand Research Institute - {{$title ?? ''}}</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/logo.png') }}">
     @include('web.layouts.includes.style')
     @include('web.layouts.includes.alert')
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon_io/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon_io/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon_io/favicon-16x16.png') }}">
 </head>
 
 <body id="top-header">
