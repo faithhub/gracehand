@@ -22,7 +22,7 @@
       <div class="container-fluid container-padding">
         <a class="navbar-brand" href="{{ url('/') }}">
           <!-- <img src="assets/images/dark-logo.png" alt="Eduhash" class="img-fluid"> -->
-          
+
           @if(config("settings")->website_logo)
           <img src='data:image/;base64,{{ substr(config("settings")->website_logo, 5)}}' alt="GraceHand Logo" class="img-fluid" style="max-width: 90px;">
           @else
@@ -50,7 +50,7 @@
               </a>
             </li>
 
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle {{ request()->is('training')  ? 'active' : '' }}" href="#" id="navbar3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Training<i class="fa fa-angle-down"></i>
               </a>
@@ -62,8 +62,13 @@
                   Full Package Training
                 </a>
               </div>
-            </li>
+            </li> -->
 
+            <li class="nav-item ">
+              <a href="" class="nav-link {{ request()->is('training')  ? 'active' : '' }}">
+                Trainings
+              </a>
+            </li>
             <li class="nav-item ">
               <a href="{{ url('partnership') }}" class="nav-link {{ request()->is('partnership')  ? 'active' : '' }}">
                 Partnership

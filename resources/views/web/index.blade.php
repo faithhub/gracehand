@@ -18,6 +18,46 @@
 </section>
 <!-- Banner Section end -->
 
+<!-- About Section Start -->
+<section class="about-section section-padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6">
+                <div class="video-block">
+                    <img src="assets/images/bg/about.jpg" alt="" class="img-fluid">
+                    <a href="#" class="video-icon"><i class="fa fa-play"></i></a>
+                </div>
+            </div>
+
+            <div class="col-xl-6 pl-5 col-lg-6">
+                <div class="section-heading mt-4 mt-lg-0 ">
+                    <span class="subheading">About Us</span>
+                    <h3>Gracehands Reserach <span> Institute</span></h3>
+                    <p style="text-align: justify;">
+                        {!!config("settings")->about_content!!}
+                    </p>
+                </div>
+                <ul class="about-features">
+                    <li>
+                        <i class="fa fa-check"></i>
+                        <h5>High Quality Video Details</h5>
+                    </li>
+                    <li>
+                        <i class="fa fa-check"></i>
+                        <h5>Powerful Audiance</h5>
+                    </li>
+                    <li>
+                        <i class="fa fa-check"></i>
+                        <h5>Premium Content Worldwide</h5>
+                    </li>
+                </ul>
+
+                <a href="#" class="btn btn-main">Our Courses</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section END -->
 <!-- Feature section start -->
 <section class="feature section-padding pb-0">
     <div class="container">
@@ -81,46 +121,6 @@
     </div>
 </section>
 <!-- Feature section End -->
-<!-- About Section Start -->
-<section class="about-section section-padding">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-6 col-lg-6">
-                <div class="video-block">
-                    <img src="assets/images/bg/about.jpg" alt="" class="img-fluid">
-                    <a href="#" class="video-icon"><i class="fa fa-play"></i></a>
-                </div>
-            </div>
-
-            <div class="col-xl-6 pl-5 col-lg-6">
-                <div class="section-heading mt-4 mt-lg-0 ">
-                    <span class="subheading">About Us</span>
-                    <h3>Gracehands Reserach <span> Institute</span></h3>
-                    <p style="text-align: justify;">
-                        {!!config("settings")->about_content!!}
-                    </p>
-                </div>
-                <ul class="about-features">
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <h5>High Quality Video Details</h5>
-                    </li>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <h5>Powerful Audiance</h5>
-                    </li>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <h5>Premium Content Worldwide</h5>
-                    </li>
-                </ul>
-
-                <a href="#" class="btn btn-main">Our Courses</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- About Section END -->
 <section class="section-padding popular-course bg-grey">
     <div class="container">
         <div class="row align-items-center justify-content-center">
