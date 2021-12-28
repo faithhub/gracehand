@@ -9,7 +9,7 @@
                     <span class="subheading">Welcome to</span>
                     <h1><span class="font-weight-normal">GraceHands</span> Research Institute</h1>
                     <h3 class="text-white">Institute driven with passion to affect lives in the world of data analytics and research</h3>
-                    <a href="#" class="btn btn-main mr-2">our Trainings </a>
+                    <a href="{{ route('trainings') }}" class="btn btn-main mr-2">our Trainings </a>
                     <a href="#" class="btn btn-tp">Services </a>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                     </li>
                 </ul>
 
-                <a href="#" class="btn btn-main">Our Trainings</a>
+                <a href="{{ route('trainings') }}" class="btn btn-main">Our Trainings</a>
             </div>
         </div>
     </div>
