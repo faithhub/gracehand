@@ -81,6 +81,7 @@
     </div>
 </section>
 <!-- Feature section End -->
+
 <!-- About Section Start -->
 <section class="about-section section-padding">
     <div class="container">
@@ -121,6 +122,14 @@
                 <a href="{{ route('trainings') }}" class="btn btn-main">Our Trainings</a>
             </div>
         </div>
+        <div class="row align-items-center mt-3">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="video-block">
+                    <img src="{{ asset('banners/about-banner.jpeg') }}" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </section>
 <!-- About Section END -->
@@ -197,7 +206,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <div class="text-center mt-5">
-                   <a style="text-decoration: none;" href="{{ route('trainings') }}" class="btn btn-secondary">View all trainings </a>
+                    <a style="text-decoration: none;" href="{{ route('trainings') }}" class="btn btn-secondary">View all trainings </a>
                 </div>
             </div>
         </div>
