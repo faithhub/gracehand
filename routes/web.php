@@ -25,9 +25,9 @@ Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/about', [App\Http\Controllers\HomeController::class, 'about']);
+Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');;
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact']);
-Route::get('/courses', [App\Http\Controllers\HomeController::class, 'courses']);
+Route::get('/trainings', [App\Http\Controllers\HomeController::class, 'trainings'])->name('trainings');;
 Route::get('/course_info', [App\Http\Controllers\HomeController::class, 'course_info']);
 Route::get('/partnership', [App\Http\Controllers\HomeController::class, 'partnership']);
 Route::post('/partnership', [App\Http\Controllers\HomeController::class, 'create_partnership'])->name('partnership');

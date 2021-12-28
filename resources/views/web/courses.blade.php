@@ -13,38 +13,83 @@
 </div> --}}
 
 <!-- Popular -->
-
-<div class="popular page_section" style="margin-top: 4rem">
-  <div class="container ">
-    <div class="row">
-      <div class="col">
-        <div class="section_title text-center">
-          <h1>Full Package Training</h1>
-        </div>
-      </div>
-    </div>
-
-    <div class="row course_boxes">
-
-      <!-- Popular Course Item -->
-      <div class="col-lg-4 course_box">
-        <div class="card">
-          <img class="card-img-top" src="{{ asset('web/images/course_1.jpg') }}" alt="https://unsplash.com/@kellybrito">
-          <div class="card-body text-center">
-            <div class="card-title"><a href="{{url('course_info')}}">A complete guide to design</a></div>
-            <div class="card-text">Adobe Guide, Layes, Smart Objects etc...</div>
-          </div>
-          <div class="price_box d-flex flex-row align-items-center">
-            <div class="course_author_image">
-              <img src="{{ asset('web/images/author.jpg') }}" alt="https://unsplash.com/@mehdizadeh">
+<section class="section-padding popular-course bg-grey">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-7">
+                <div class="section-heading center-heading">
+                    <!-- <span class="subheading">Trending Trainings</span> -->
+                    <h3>Popular Online Trainings</h3>
+                    <!-- <p>The ultimate planning solution for
+                        students who want to reach their personal goals</p> -->
+                </div>
             </div>
-            <div class="course_author_name">Michael Smith, <span>Author</span></div>
-            <div class="course_price d-flex flex-column align-items-center justify-content-center"><span>$29</span></div>
-          </div>
         </div>
-      </div>
 
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="course-block">
+                    <div class="course-img">
+                        <img src="{{ asset('banners/spss-banner.jpeg') }}" alt="" class="img-fluid">
+                        <div class="course-price ">₦{{ number_format(5000, 2) }}</div>
+                    </div>
+
+                    <div class="course-content">
+                        <span class="course-cat">SPSS</span>
+                        <h4><a href="https://spss.gracehandsresearchinstitute.com/" target="blank">Data Analysis with SPSS + Certificate</a></h4>
+                        <div class="course-meta">
+                            <span class="course-student"><i class="fa fa-user-alt"></i>340 Students</span>
+                            <span class="course-duration"><i class="far fa-file-alt"></i>82 Lessons</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="course-block">
+                    <div class="course-img">
+                        <img src="{{ asset('banners/excel-banner.jpeg') }}" alt="" class="img-fluid">
+                        <div class="course-price ">₦{{ number_format(5000, 2) }}</div>
+                    </div>
+
+                    <div class="course-content">
+                        <span class="course-cat">Excel</span>
+                        <h4><a href="#">Excel Training + Certificate</a></h4>
+                        <div class="course-meta">
+                            <span class="course-student"><i class="fa fa-user-alt"></i>340 Students</span>
+                            <span class="course-duration"><i class="far fa-file-alt"></i>82 Lessons</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="course-block">
+                    <div class="course-img">
+                        <img src="{{ asset('banners/excel-banner.jpeg') }}" alt="" class="img-fluid">
+                        <div class="course-price ">₦{{ number_format(5000, 2) }}</div>
+                    </div>
+
+                    <div class="course-content">
+                        <span class="course-cat">Research Analysis</span>
+                        <h4><a href="#">Introduction to Research Analysis</a></h4>
+
+                        <div class="course-meta">
+                            <span class="course-student"><i class="fa fa-user-alt"></i>340 Students</span>
+                            <span class="course-duration"><i class="far fa-file-alt"></i>82 Lessons</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="text-center mt-5">
+                   <a style="text-decoration: none;" href="#" class="btn btn-secondary">View all trainings </a>
+                </div>
+            </div>
+        </div> -->
     </div>
-  </div>
-</div>
+</section>
 @endsection

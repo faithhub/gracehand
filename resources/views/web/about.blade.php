@@ -80,8 +80,11 @@
         <div class="row align-items-center">
             <div class="col-xl-6 col-lg-6">
                 <div class="video-block">
-                    <img src="assets/images/bg/about.jpg" alt="" class="img-fluid">
-                    <a href="#" class="video-icon"><i class="fa fa-play"></i></a>
+                    <!-- <img src="assets/images/bg/about.jpg" alt="" class="img-fluid">
+                    <a href="#" class="video-icon"><i class="fa fa-play"></i></a> -->                    
+                    <video controls autoplay muted class="col-12" style="padding: 0px; padding-bottom: -9px;">
+                        <source src="{{ asset('videos/gracehand.mp4') }}" type="video/mp4">
+                    </video>
                 </div>
             </div>
 
@@ -109,7 +112,7 @@
                     </li>
                 </ul>
 
-                <a href="#" class="btn btn-main">Our Courses</a>
+                <a href="{{ route('trainings') }}" class="btn btn-main">Our Trainings</a>
             </div>
         </div>
     </div>

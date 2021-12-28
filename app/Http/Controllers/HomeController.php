@@ -41,9 +41,9 @@ class HomeController extends Controller
     $data['title'] = "Contact Us";
     return view('web.contact', $data);
   }
-  public function courses()
+  public function trainings()
   {
-    $data['title'] = "Home Page";
+    $data['title'] = "All Our Tranings";
     return view('web.courses', $data);
   }
   public function course_info()

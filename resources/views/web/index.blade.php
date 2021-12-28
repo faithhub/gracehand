@@ -7,10 +7,10 @@
             <div class="col-md-12 col-xl-7">
                 <div class="banner-content text-center">
                     <span class="subheading">Welcome to</span>
-                    <h1><span class="font-weight-normal">GraceHand</span> Research Institute</h1>
-                    <!-- <p>Eduhash is a HTML5 template based on Sass and Bootstrap 4 with modern and creative multipurpose design you can use it as a startups.</p> -->
+                    <h1><span class="font-weight-normal">GraceHands</span> Research Institute</h1>
+                    <h3 class="text-white">Institute driven with passion to affect lives in the world of data analytics and research</h3>
                     <a href="#" class="btn btn-main mr-2">our Trainings </a>
-                    <a href="#" class="btn btn-tp">Partner </a>
+                    <a href="#" class="btn btn-tp">Services </a>
                 </div>
             </div>
         </div> <!-- / .row -->
@@ -18,46 +18,6 @@
 </section>
 <!-- Banner Section end -->
 
-<!-- About Section Start -->
-<section class="about-section section-padding">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-6 col-lg-6">
-                <div class="video-block">
-                    <img src="assets/images/bg/about.jpg" alt="" class="img-fluid">
-                    <a href="#" class="video-icon"><i class="fa fa-play"></i></a>
-                </div>
-            </div>
-
-            <div class="col-xl-6 pl-5 col-lg-6">
-                <div class="section-heading mt-4 mt-lg-0 ">
-                    <span class="subheading">About Us</span>
-                    <h3>Gracehands Reserach <span> Institute</span></h3>
-                    <p style="text-align: justify;">
-                        {!!config("settings")->about_content!!}
-                    </p>
-                </div>
-                <ul class="about-features">
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <h5>High Quality Video Details</h5>
-                    </li>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <h5>Powerful Audiance</h5>
-                    </li>
-                    <li>
-                        <i class="fa fa-check"></i>
-                        <h5>Premium Content Worldwide</h5>
-                    </li>
-                </ul>
-
-                <a href="#" class="btn btn-main">Our Courses</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- About Section END -->
 <!-- Feature section start -->
 <section class="feature section-padding pb-0">
     <div class="container">
@@ -121,15 +81,58 @@
     </div>
 </section>
 <!-- Feature section End -->
+<!-- About Section Start -->
+<section class="about-section section-padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6">
+                <div class="video-block">
+                    <!-- <img src="assets/images/bg/about.jpg" alt="" class="img-fluid"> -->
+                    <!-- <a href="#" class="video-icon"><i class="fa fa-play"></i></a> -->
+                    <video controls autoplay muted class="col-12" style="padding: 0px; padding-bottom: -9px;">
+                        <source src="{{ asset('videos/gracehand.mp4') }}" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="col-xl-6 pl-5 col-lg-6">
+                <div class="section-heading mt-4 mt-lg-0 ">
+                    <span class="subheading">About Us</span>
+                    <h3>Gracehands Reserach <span> Institute</span></h3>
+                    <p style="text-align: justify;">
+                        {!!config("settings")->about_content!!}
+                    </p>
+                </div>
+                <ul class="about-features">
+                    <li>
+                        <i class="fa fa-check"></i>
+                        <h5>High Quality Video Details</h5>
+                    </li>
+                    <li>
+                        <i class="fa fa-check"></i>
+                        <h5>Powerful Audiance</h5>
+                    </li>
+                    <li>
+                        <i class="fa fa-check"></i>
+                        <h5>Premium Content Worldwide</h5>
+                    </li>
+                </ul>
+
+                <a href="#" class="btn btn-main">Our Trainings</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section END -->
 <section class="section-padding popular-course bg-grey">
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-7">
                 <div class="section-heading center-heading">
-                    <span class="subheading">Trending Courses</span>
-                    <h3>Popular Online Courses Around You</h3>
-                    <p>The ultimate planning solution for
-                       students who want to reach their personal goals</p>
+                    <span class="subheading">Trending Trainings</span>
+                    <h3>Popular Online Trainings Around You</h3>
+                    <!-- <p>The ultimate planning solution for
+                        students who want to reach their personal goals</p> -->
                 </div>
             </div>
         </div>
@@ -138,13 +141,13 @@
             <div class="col-lg-4 col-md-6">
                 <div class="course-block">
                     <div class="course-img">
-                        <img src="assets/images/course/course-1.jpg" alt="" class="img-fluid">
-                        <div class="course-price ">$120 </div>
+                        <img src="{{ asset('banners/spss-banner.jpeg') }}" alt="" class="img-fluid">
+                        <div class="course-price ">₦{{ number_format(5000, 2) }}</div>
                     </div>
 
                     <div class="course-content">
                         <span class="course-cat">SPSS</span>
-                        <h4><a href="#">Information About Quantitative Analysis with SPSS</a></h4>
+                        <h4><a href="https://spss.gracehandsresearchinstitute.com/" target="blank">Data Analysis with SPSS + Certificate</a></h4>
                         <div class="course-meta">
                             <span class="course-student"><i class="fa fa-user-alt"></i>340 Students</span>
                             <span class="course-duration"><i class="far fa-file-alt"></i>82 Lessons</span>
@@ -156,13 +159,13 @@
             <div class="col-lg-4 col-md-6">
                 <div class="course-block">
                     <div class="course-img">
-                        <img src="assets/images/course/course-3.jpg" alt="" class="img-fluid">
-                        <div class="course-price ">$100 </div>
+                        <img src="{{ asset('banners/excel-banner.jpeg') }}" alt="" class="img-fluid">
+                        <div class="course-price ">₦{{ number_format(5000, 2) }}</div>
                     </div>
 
                     <div class="course-content">
-                        <span class="course-cat">Data Analysis</span>
-                        <h4><a href="#">Information to Data Analysis</a></h4>
+                        <span class="course-cat">Excel</span>
+                        <h4><a href="#">Excel Training + Certificate</a></h4>
                         <div class="course-meta">
                             <span class="course-student"><i class="fa fa-user-alt"></i>340 Students</span>
                             <span class="course-duration"><i class="far fa-file-alt"></i>82 Lessons</span>
@@ -174,8 +177,8 @@
             <div class="col-lg-4 col-md-6">
                 <div class="course-block">
                     <div class="course-img">
-                        <img src="assets/images/course/course-2.jpg" alt="" class="img-fluid">
-                        <div class="course-price ">$100 </div>
+                        <img src="{{ asset('banners/excel-banner.jpeg') }}" alt="" class="img-fluid">
+                        <div class="course-price ">₦{{ number_format(5000, 2) }}</div>
                     </div>
 
                     <div class="course-content">
@@ -194,7 +197,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <div class="text-center mt-5">
-                    Take the control of their life back and start doing things to make their dream come true. <a href="#" class="font-weight-bold text-underline">View all courses </a>
+                   <a style="text-decoration: none;" href="#" class="btn btn-secondary">View all trainings </a>
                 </div>
             </div>
         </div>
@@ -225,7 +228,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="counter-item">
-                    <h6>Total Courses</h6>
+                    <h6>Total Trainings</h6>
                     <div class="count">
                         <span class="counter">1450</span>
                     </div>

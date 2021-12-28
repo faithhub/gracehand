@@ -1,5 +1,5 @@
 <header>
-  <div class="header-top ">
+  <!-- <div class="header-top ">
     <div class="container-fluid container-padding">
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-6">
@@ -7,14 +7,14 @@
         </div>
         <div class="col-lg-6 col-md-6">
           <div class="header-right float-lg-right">
-            <!-- <a href="#">Join Now</a>
+            <a href="#">Join Now</a>
             <a href="#">Courses</a>
-            <a href="#">Membership Login</a> -->
+            <a href="#">Membership Login</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Main Menu Start -->
   <div class="site-navigation main_menu menu-transparent" id="mainmenu-area">
@@ -40,12 +40,12 @@
 
           <ul class="navbar-nav mx-auto">
             <li class="nav-item dropdown">
-              <a href="{{ url('/') }}" class="nav-link {{ request()->is('/*')  ? 'active' : '' }}">
+              <a href="{{ route('home') }}" class="nav-link {{ request()->is('/*')  ? 'active' : '' }}">
                 Home
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{ url('about') }}" class="nav-link {{ request()->is('about')  ? 'active' : '' }}">
+              <a href="{{ route('about') }}" class="nav-link {{ request()->is('about')  ? 'active' : '' }}">
                 About us
               </a>
             </li>
@@ -65,7 +65,7 @@
             </li> -->
 
             <li class="nav-item ">
-              <a href="" class="nav-link {{ request()->is('training')  ? 'active' : '' }}">
+              <a href="{{ route('trainings') }}" class="nav-link {{ request()->is('trainings')  ? 'active' : '' }}">
                 Trainings
               </a>
             </li>
