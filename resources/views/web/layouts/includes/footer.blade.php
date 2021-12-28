@@ -60,7 +60,7 @@
 			<div class="row justify-content-center align-items-center">
 				<div class="col-xl-6 col-lg-6">
 					<div class="copyright text-lg-left text-center">
-						<p>© Copyright EduHash Template All rights reserved.Crafted by <a href="https://amaofaith.com/">Cierto</a> </p>
+						<p>© Copyright GraceHands All rights reserved.Crafted by <a href="https://amaofaith.com/">Cierto</a> </p>
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6">
