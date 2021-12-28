@@ -31,7 +31,7 @@
                 <div class="course-block">
                     <div class="course-img">
                         <img src="{{ asset('banners/spss-banner.jpeg') }}" alt="" class="img-fluid">
-                        <div class="course-price ">₦{{ number_format(5000, 2) }}</div>
+                        <div class="course-price ">${{ number_format(50, 2) }}</div>
                     </div>
 
                     <div class="course-content">
@@ -49,7 +49,7 @@
                 <div class="course-block">
                     <div class="course-img">
                         <img src="{{ asset('banners/excel-banner.jpeg') }}" alt="" class="img-fluid">
-                        <div class="course-price ">₦{{ number_format(5000, 2) }}</div>
+                        <div class="course-price ">${{ number_format(50, 2) }}</div>
                     </div>
 
                     <div class="course-content">
@@ -66,13 +66,13 @@
             <div class="col-lg-4 col-md-6">
                 <div class="course-block">
                     <div class="course-img">
-                        <img src="{{ asset('banners/excel-banner.jpeg') }}" alt="" class="img-fluid">
-                        <div class="course-price ">₦{{ number_format(5000, 2) }}</div>
+                        <img src="{{ asset('banners/research-banner.jpeg') }}" alt="" class="img-fluid">
+                        <div class="course-price ">${{ number_format(50, 2) }}</div>
                     </div>
 
                     <div class="course-content">
                         <span class="course-cat">Research Analysis</span>
-                        <h4><a href="#">Introduction to Research Analysis</a></h4>
+                        <h4><a href="http://research.gracehandsresearchinstitute.com/" target="blank">Research Analysis + Certificate</a></h4>
 
                         <div class="course-meta">
                             <span class="course-student"><i class="fa fa-user-alt"></i>340 Students</span>

@@ -23,8 +23,8 @@ Auth::routes();
 Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/index', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');;
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact']);
 Route::get('/trainings', [App\Http\Controllers\HomeController::class, 'trainings'])->name('trainings');;
