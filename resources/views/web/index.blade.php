@@ -106,27 +106,28 @@
                 </div>
                 <ul class="about-features">
                     <li>
-                        <i class="fa fa-check"></i>
-                        <h5>High Quality Video Details</h5>
+
+                        <h5> <i class="fa fa-check"></i> High Quality Video Details</h5>
                     </li>
                     <li>
-                        <i class="fa fa-check"></i>
-                        <h5>Powerful Audiance</h5>
+                        <h5> <i class="fa fa-check"></i>Powerful Audiance</h5>
                     </li>
                     <li>
-                        <i class="fa fa-check"></i>
-                        <h5>Premium Content Worldwide</h5>
+                        <h5> <i class="fa fa-check"></i>Premium Content Worldwide</h5>
                     </li>
                 </ul>
-
-                <a href="{{ route('trainings') }}" class="btn btn-main">Our Trainings</a>
+            </div>
+            <div class="col-xl-6 pl-5 col-lg-6">
+                <div class="video-block">
+                    <img src="{{ asset('banners/about-banner.jpeg') }}" alt="" class="img-fluid">
+                </div>
+                <div class="text-center mt-3">
+                    <a href="{{ route('trainings') }}" class="btn btn-main">Our Trainings</a>
+                </div>
             </div>
         </div>
         <div class="row align-items-center mt-3">
             <div class="col-lg-8 offset-lg-2">
-                <div class="video-block">
-                    <img src="{{ asset('banners/about-banner.jpeg') }}" alt="" class="img-fluid">
-                </div>
             </div>
         </div>
     </div>
@@ -148,13 +149,13 @@
 
         <div class="row">
             <div class="col-lg-4 col-md-6">
-                <div class="course-block">
-                    <div class="course-img">
+                <div class="course-block" id="spss_div">
+                    <div class="course-img" id="spss_div1">
                         <img src="{{ asset('banners/spss-banner.jpeg') }}" alt="" class="img-fluid">
                         <div class="course-price ">${{ number_format(50, 2) }}</div>
                     </div>
 
-                    <div class="course-content">
+                    <div class="course-content" id="spss_div2">
                         <span class="course-cat">SPSS</span>
                         <h4><a href="https://spss.gracehandsresearchinstitute.com/" target="blank">Data Analysis with SPSS + Certificate</a></h4>
                         <div class="course-meta">
@@ -166,13 +167,13 @@
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="course-block">
-                    <div class="course-img">
+                <div class="course-block" id="excel_div">
+                    <div class="course-img" id="excel_div1">
                         <img src="{{ asset('banners/excel-banner.jpeg') }}" alt="" class="img-fluid">
                         <div class="course-price ">${{ number_format(50, 2) }}</div>
                     </div>
 
-                    <div class="course-content">
+                    <div class="course-content" id="excel_div2">
                         <span class="course-cat">Excel</span>
                         <h4><a href="#">Excel Training + Certificate</a></h4>
                         <div class="course-meta">
@@ -184,13 +185,13 @@
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="course-block">
-                    <div class="course-img">
+                <div class="course-block" id="res_div">
+                    <div class="course-img" id="res_div1">
                         <img src="{{ asset('banners/research-banner.jpeg') }}" alt="" class="img-fluid">
                         <div class="course-price ">${{ number_format(50, 2) }}</div>
                     </div>
 
-                    <div class="course-content">
+                    <div class="course-content" id="res_div2">
                         <span class="course-cat">Research Analysis</span>
                         <h4><a href="http://research.gracehandsresearchinstitute.com/" target="blank">Research Analysis + Certificate</a></h4>
 
@@ -276,9 +277,6 @@
         </div>
     </div>
 </div>
-
-
-
 <!-- About Section Start -->
 <!-- <section class="about-section section-padding">
     <div class="container">
@@ -438,4 +436,32 @@
     </div>
 </section> -->
 <!-- Footer section start -->
+
+<script type="text/javascript">
+    $(window).on('load resize', function() { //Fires when window is loaded or resized
+        //SPSS Div
+        var spss_div1 = $('#spss_div1');
+        var spss_div2 = $('#spss_div2');
+        var spss_div = $('#spss_div');
+        //Excel Div
+        var excel_div1 = $('#excel_div1');
+        var excel_div2 = $('#excel_div2');
+        var excel_div = $('#excel_div');
+        //Research Div
+        var res_div1 = $('#res_div1');
+        var res_div2 = $('#res_div2');
+        var res_div = $('#res_div');
+
+        if ($(window).width() < 800) {
+            spss_div.prepend(spss_div2).append(spss_div1); // move div 2 to start & div 1 to end
+            excel_div.prepend(excel_div2).append(excel_div1); // move div 2 to start & div 1 to end
+            res_div.prepend(res_div2).append(res_div1); // move div 2 to start & div 1 to end
+        } else {
+            res_div.prepend(res_div1).append(res_div2); // move div 1 to start & spss_div2 to end
+            spss_div.prepend(spss_div1).append(spss_div2); // move div 1 to start & spss_div2 to end
+            excel_div.prepend(excel_div1).append(excel_div2); // move div 1 to start & excel_div2 to end
+        }
+
+    });
+</script>
 @endsection
